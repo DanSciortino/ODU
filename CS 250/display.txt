@@ -1,0 +1,10 @@
+/*display
+   void display()
+    {
+        cout <<"purr = " << purr << endl 
+            << "play = " << play << endl 
+            << "sleep = " << sleep << endl 
+            << "muffins = " << muffins << endl 
+            << "eat = " << eat << endl;
+    }
+*/

@@ -1,0 +1,11 @@
+all: kat
+
+hello: kat.o
+	g++ kat.o -o kat
+
+
+kat.o: kat_test.cpp
+	g++ -c kat_test.cpp
+
+clean:
+	rm -rf *o kat
