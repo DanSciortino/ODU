@@ -67,6 +67,7 @@ public:
         }
     }
 
+
     void weaponDisplay(int i)
     {
         w[i] -> display(i);

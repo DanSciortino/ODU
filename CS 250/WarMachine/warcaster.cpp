@@ -48,7 +48,7 @@ int main()
 
     //Spell 2 Name and Desc
     string sName2 = "Redline";
-    string sDesc2 = "Target warjack in this modelÕs battlegroup gains +2 STR and SPD and can run, charge, or make power attack slams or tramples without spending focus. When it ends its activation, it suffers d3 damage points";
+    string sDesc2 = "Target warjack in this modelï¿½s battlegroup gains +2 STR and SPD and can run, charge, or make power attack slams or tramples without spending focus. When it ends its activation, it suffers d3 damage points";
     bool u2 = true;
     bool o2 = false;
     bool feat2 = false;

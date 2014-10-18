@@ -1,4 +1,5 @@
-class Weapon{
+class Weapon
+//test{
 public:
     Weapon()
     {
@@ -14,6 +15,13 @@ public:
     void setdecrip(string d)
     {
         description = d;
+    }
+    void setweaponstats(int i)
+    {
+        for (int j = 0; j < 4 ; j++)
+        {
+            weaponStat[j] = i;
+        }
     }
 
     void setModEffects(int i)
