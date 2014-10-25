@@ -3,9 +3,10 @@ class Investments
 public:
     Investments()
     {
-        type = 0;
-        cost = 0;
-        value = 0;
+        Type = 0;
+        Cost = 0;
+        Value = 0;
+        Next = NULL;
     }
 
     ~Investments() {}
@@ -13,84 +14,142 @@ public:
     //Setters
     void setCost(double c)
     {
-        cost = c;
+        Cost = c;
     }
 
     void setValue(double v)
     {
-        value = v;
+        Value = v;
     }
 
     //Getters
     double getCost()
     {
-        return cost;
+        return Cost;
     }
 
     double getValue()
     {
-        return value;
+        return Value;
     }
 
     int getType()
     {
-        return type;
+        return Type;
     }
 
     void display()
     {
-        cout << "Cost: " << cost << endl;
-        cout << "Value: " << value << endl;
+        cout << "Cost: " << Cost << endl;
+        cout << "Value: " << Value << endl;
     }
 
 protected:
-    int type;
-    double cost;
-    double value;
+    Investments * Next;
+    int Type;
+    double Cost;
+    double Value;
 };
 
-class Stock:public Investments
+class Stock:public Investments //Type = 1
 {
 public:
-    Stock() {};
-
+    Stock()
+    {
+        Type = 1;
+    }
+    Stock(int i)
+    {
+        Type = 1;
+    }
+    void ticker()
+    {
+        Investments::display();
+    }
 protected:
 };
 
-class RealEstate:public Investments
+class RealEstate:public Investments //Type = 2
 {
 public:
     RealEstate()
     {
-        squareFeet = 0;
+        SquareFeetBuilding = 0;
+        Type = 2;
+    }
+    RealEstate(int i)
+    {
+        SquareFeetBuilding = i;
+        Type = 2;
     }
 
     void setSquareFeet(int s)
     {
-        squareFeet = s;
+        SquareFeetBuilding = s;
     }
 
     int getSquareFeet()
     {
-        return squareFeet;
+        return SquareFeetBuilding;
     }
+
 private:
-    int squareFeet;
+    int SquareFeetBuilding;
 };
 
-class Collection:public Investments
+class Collection:public Investments //Type = 3
 {
 public:
-    Collection() {};
+    Collection()
+    {
+
+        Name = ' ';
+        Type = 3;
+    };
+
+    Collection(string s)
+    {
+
+        Name = s ;
+        Type = 3;
+    };
+
     void setName(string n)
     {
-        name = n;
+        Name = n;
     }
 
     string getName()
     {
-        return name;
+        return Name;
     }
-protected:
-    string name;
+
+private:
+    string Name;
 };
+/*
+class Building
+{
+public:
+    Building(int i)
+    {
+        SquareFeet = i;
+        Type = 0;
+    }
+    void setSquareFeet(int s)
+    {
+        SquareFeet = s;
+    }
+    int getSquareFeet()
+    {
+        return SquareFeet;
+    }
+    void display()
+    {
+        cout << "The Building has" << SquareFeet << endl;
+    }
+private:
+    int Type;
+    int SquareFeet;
+};
+*/
