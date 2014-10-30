@@ -21,60 +21,52 @@ int main()
     Stock *StockCurr = NULL;
     RealEstate *RealEstateCurr = NULL;
     Collection *CollectionCurr = NULL;
-//    Building *BuildingCurr = NULL;
 
     //Misc Variables
     int tempt = 0;
     int tempi = 0;
-    ifstream inFile("collections.txt",ios::in);
+    string input = "";
 
-    //Error Handling for bad file
-    if (inFile.fail())
+    cout << "Enter a Number 0-4 to set up a Investment Portfolio: "<< endl;
+    cin >> tempt;
+    while (tempt != 9)
         {
-            cout << "Could not read input file!" << endl;
-        }
-
-    //Setting up while loop and reading from file
-    inFile >> tempt;
-    while (!inFile.eof())
-        {
-            inFile >> tempi;
             switch(tempt)
                 {
-                    /*
-                case 0:
-                {
-                BuildingCurr = new Building(tempi);
-                newone = BuildingCurr;
-                }break;
-*/
                 case 1:
                 {
-                StockCurr = new Stock(tempi);
-                newone = StockCurr;
-                }break;
+                    cout << "Enter any ticker information for the stock:" << endl;
+                    getline(cin, input);
+                    StockCurr = new Stock(input);
+                    newone = StockCurr;
+
+                }
+                break;
+                cin.clear();
+                cin.ignore();
 
                 case 2:
                 {
-                RealEstateCurr = new RealEstate(tempi);
-                newone = RealEstateCurr;
-                }break;
+                    RealEstateCurr = new RealEstate(tempi);
+                    newone = RealEstateCurr;
 
+                }
+                break;
+                cin.clear();
+                cin.ignore();
                 case 3:
                 {
-                CollectionCurr = new Collection(tempi);
-                newone = CollectionCurr;
-                }break;
+                    cout << "Enter the name for the Collection" << endl;
+                    cin >> input;
+                    CollectionCurr = new Collection(input);
+                    newone = CollectionCurr;
 
-                /*case 4:
-                {
-                BuildingCurr = new Building(tempi);
-                newone = BuildingCurr;
-                }break;*/ //Maybe not needed
-
+                }
+                break;
+                cin.clear();
+                cin.ignore();
                 } //closes switch
-            inFile >> tempt;
+
         }//closes loop
-  inFile.close();
     return 0;
 }// closes program

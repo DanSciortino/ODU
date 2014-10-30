@@ -58,15 +58,22 @@ public:
     {
         Type = 1;
     }
-    Stock(int i)
+    Stock(string s)
     {
+        Ticker = s;
         Type = 1;
     }
-    void ticker()
+
+    void setTicker(string t)
     {
-        Investments::display();
+        Ticker = t;
     }
-protected:
+    string getTicker()
+    {
+        return Ticker;
+    }
+private:
+    string Ticker;
 };
 
 class RealEstate:public Investments //Type = 2
