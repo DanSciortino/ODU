@@ -33,6 +33,7 @@ int main()
 //Seed read with error catch if the value is out of bounds
     cout << "Enter a Number 1-3 to set up a Investment Portfolio. Else hit 9 to exit: "<< endl;
     cin >> tempt;
+<<<<<<< HEAD
     if(tempt == 9)
         {
             return 0;
@@ -118,5 +119,30 @@ int main()
 
                 }
         }//closes loop
+=======
+    while(tempt < 1 || tempt > 3)
+    {
+        cout << "Please enter a new number: " << endl;
+        cin >> tempt;
+    }
+while(tempt){
+    switch(tempt){
+case 1:{}break;
+case 2:{}break;
+case 3:{}break;
+
+
+
+}
+    cout << "Enter a Number 1-3 to set up a Investment Portfolio: "<< endl;
+    cin >> tempt;
+    while(tempt < 1 || tempt > 3)
+    {
+        cout << "Please enter a new number: " << endl;
+        cin >> tempt;
+    }
+
+}
+>>>>>>> 7a02a2b8ffca2649cdb1a37094c159d2d34e3a43
     return 0;
 }// closes program
