@@ -92,31 +92,36 @@ class RealEstate:public Investments //Type = 2
 public:
     RealEstate()
     {
-        Acres = 0;
+        SquareFeetBuilding = 0;
         Type = 2;
-        myBuild = NULL;
     }
     RealEstate(double d)
     {
+<<<<<<< HEAD
         Acres = d;
+=======
+        SquareFeetBuilding = i;
+>>>>>>> parent of 499b19a... Adding building.h
         Type = 2;
     }
 
-    void setAcres(int s)
+    void setSquareFeet(int s)
     {
-        Acres = s;
+        SquareFeetBuilding = s;
     }
 
-    int getAcres()
+    int getSquareFeet()
     {
-        return Acres;
+        return SquareFeetBuilding;
     }
+<<<<<<< HEAD
     void makeBuild(double s){
     myBuild = new Building(s);}
+=======
+>>>>>>> parent of 499b19a... Adding building.h
 
 private:
-    int  Acres;
-    Building * myBuild;
+    int SquareFeetBuilding;
 };
 
 class Collection:public Investments //Type = 3
@@ -149,3 +154,29 @@ public:
 private:
     string Name;
 };
+/*
+class Building
+{
+public:
+    Building(int i)
+    {
+        SquareFeet = i;
+        Type = 0;
+    }
+    void setSquareFeet(int s)
+    {
+        SquareFeet = s;
+    }
+    int getSquareFeet()
+    {
+        return SquareFeet;
+    }
+    void display()
+    {
+        cout << "The Building has" << SquareFeet << endl;
+    }
+private:
+    int Type;
+    int SquareFeet;
+};
+*/
