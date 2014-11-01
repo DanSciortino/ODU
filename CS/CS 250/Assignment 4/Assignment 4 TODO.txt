@@ -1,3 +1,0 @@
-Ticker -> reading from console
-Building --
-What does the input file look like -> reading from condsole
