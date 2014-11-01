@@ -81,27 +81,31 @@ class RealEstate:public Investments //Type = 2
 public:
     RealEstate()
     {
-        SquareFeetBuilding = 0;
+        Acres = 0;
         Type = 2;
+        myBuild = NULL;
     }
     RealEstate(int i)
     {
-        SquareFeetBuilding = i;
+        Acres = i;
         Type = 2;
     }
 
-    void setSquareFeet(int s)
+    void setAcres(int s)
     {
-        SquareFeetBuilding = s;
+        Acres = s;
     }
 
-    int getSquareFeet()
+    int getAcres()
     {
-        return SquareFeetBuilding;
+        return Acres;
     }
+    void makeBuild(int s){
+    myBuild = new Building(s);}
 
 private:
-    int SquareFeetBuilding;
+    int  Acres;
+    Building * myBuild;
 };
 
 class Collection:public Investments //Type = 3
@@ -134,29 +138,3 @@ public:
 private:
     string Name;
 };
-/*
-class Building
-{
-public:
-    Building(int i)
-    {
-        SquareFeet = i;
-        Type = 0;
-    }
-    void setSquareFeet(int s)
-    {
-        SquareFeet = s;
-    }
-    int getSquareFeet()
-    {
-        return SquareFeet;
-    }
-    void display()
-    {
-        cout << "The Building has" << SquareFeet << endl;
-    }
-private:
-    int Type;
-    int SquareFeet;
-};
-*/
