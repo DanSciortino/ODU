@@ -1,0 +1,35 @@
+﻿Assignment 4
+A software package to manage a person’s individual investments.
+An investment can be
+a. Stock
+b. Real estate
+c. Collection
+
+Every investment has the following:
+Cost, type, and a value
+
+Stocks are investments that also have:
+a. A ticker and type = 1
+
+Real estate are investments that also have:
+a. Acres and have type = 2
+b. Building (may or may not have a building, which is NOT inheritance)
+Buildings are Type 0 and have square feet
+
+Collection is an investment type 3, with a link list of Items, items are investments that have:
+a. type = 4
+b. string name
+________________________________________________________
+
+Program Goals:
+
+Phase I
+We want to create a file with a mixture of investments
+We want to load the file into the portfolio and display it.
+
+
+Phase 2
+In main we want a linked list of investments called a portfolio, to do this we will use
+Explicit upcasting from the base class investment to each of the derived ones
+(stock, real estate, or collection)
+We want to be able to add investments to the portfolio of any type the user wants
