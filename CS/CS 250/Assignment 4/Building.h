@@ -1,16 +1,16 @@
 class Building
 {
 public:
-    Building(int i)
+    Building(double d)
     {
-        SquareFeet = i;
+        SquareFeet = d;
         Type = 0;
     }
-    void setSquareFeet(int s)
+    void setSquareFeet(double d)
     {
-        SquareFeet = s;
+        SquareFeet = d;
     }
-    int getSquareFeet()
+    double getSquareFeet()
     {
         return SquareFeet;
     }
@@ -20,5 +20,5 @@ public:
     }
 private:
     int Type;
-    int SquareFeet;
+    double SquareFeet;
 };

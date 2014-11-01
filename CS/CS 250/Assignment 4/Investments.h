@@ -8,6 +8,13 @@ public:
         Value = 0;
         Next = NULL;
     }
+    Investments(double d1, double d2)
+    {
+        Type = 0;
+        Cost = d1;
+        Value = d2;
+        Next = NULL;
+    }
 
     ~Investments() {}
 
@@ -72,6 +79,10 @@ public:
     {
         return Ticker;
     }
+    void Display(){
+    cout << "You have stock with: "<< Ticker << endl;
+
+    }
 private:
     string Ticker;
 };
@@ -85,9 +96,9 @@ public:
         Type = 2;
         myBuild = NULL;
     }
-    RealEstate(int i)
+    RealEstate(double d)
     {
-        Acres = i;
+        Acres = d;
         Type = 2;
     }
 
@@ -100,7 +111,7 @@ public:
     {
         return Acres;
     }
-    void makeBuild(int s){
+    void makeBuild(double s){
     myBuild = new Building(s);}
 
 private:

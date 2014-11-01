@@ -25,15 +25,26 @@ int main()
 
     //Misc Variables
     int tempt = 0;
+    string input = " ";
+    double tempd = 0.00;
+    double tempd2 = 0.00;
     int tempi = 0;
-    string input = "";
-
-    cout << "Enter a Number 1-3 to set up a Investment Portfolio: "<< endl;
+    char buildchar = ' ';
+//Seed read with error catch if the value is out of bounds
+    cout << "Enter a Number 1-3 to set up a Investment Portfolio. Else hit 9 to exit: "<< endl;
     cin >> tempt;
-    if (tempt < 1 || tempt > 3)
+    if(tempt == 9)
+        {
+            return 0;
+        }
+    while (tempt < 1 || tempt > 3)
         {
             cout << "Please enter a new number: " << endl;
             cin >> tempt;
+            if(tempt == 9)
+                {
+                    return 0;
+                }
         }
     while (tempt)
         {
@@ -41,33 +52,71 @@ int main()
                 {
                 case 1:
                 {
-                    cout << "Enter any ticker information for the stock:" << endl;
-                    getline(cin, input);
+                    cout << "Enter the ticker information for your stock: " << endl;
+                    cin >> input;
                     StockCurr = new Stock(input);
                     newone = StockCurr;
-
+                    cout << "Cost of the share: " << endl;
+                    cin >> tempd;
+                    cout << "Total Number of shares: " << endl;
+                    cin >> tempi;
+                    tempd2 = tempi * tempd;
+                    StockCurr -> setCost(tempd);
+                    StockCurr -> setValue(tempd2);
+                    cout << endl;
+                    StockCurr -> Display();
+                    StockCurr -> display();
+                    cin.clear();
                 }
                 break;
 
                 case 2:
                 {
-                    RealEstateCurr = new RealEstate(tempi);
+                    cout << "How many Acres does the property have: " << endl;
+                    cin >> tempd;
+                    RealEstateCurr = new RealEstate(tempd);
                     newone = RealEstateCurr;
-
+                    cout << "Does the property have a building on it (Y/N)?" << endl;
+                    cin >> buildchar;
+                    if(buildchar == 'Y'||buildchar == 'y')
+                        {
+                            cout << "How many Square Feet is the building: " << endl;
+                                 cin >> tempd2;
+                            RealEstateCurr->makeBuild(tempd2);
+                        }
+                    else
+                        {
+                            break;
+                        }
                 }
                 break;
 
                 case 3:
                 {
-                    cout << "Enter the name for the Collection" << endl;
-                    cin >> input;
-                    CollectionCurr = new Collection(input);
-                    newone = CollectionCurr;
+
 
                 }
                 break;
                 } //closes switch
 
+            //Stays in the loop to continue investment
+            cout << endl;
+            cout << "Enter a Number 1-3 to set up a Investment Portfolio. Else hit 9 to exit: "<< endl;
+            cin >> tempt;
+            if(tempt == 9)
+                {
+                    return 0;
+                }
+            while (tempt < 1 || tempt > 3)
+                {
+                    cout << "Please enter a new number: " << endl;
+                    cin >> tempt;
+                    if(tempt == 9)
+                        {
+                            return 0;
+                        }
+
+                }
         }//closes loop
     return 0;
 }// closes program
