@@ -10,7 +10,6 @@ A software package to manage a person’s individual investments
 #include <fstream>
 
 using namespace std;
-#include "Building.h"
 #include "Investments.h"
 
 int main()
@@ -29,6 +28,7 @@ int main()
     double tempd = 0.00;
     double tempd2 = 0.00;
     int tempi = 0;
+<<<<<<< HEAD
     char buildchar = ' ';
 //Seed read with error catch if the value is out of bounds
     cout << "Enter a Number 1-3 to set up a Investment Portfolio. Else hit 9 to exit: "<< endl;
@@ -48,6 +48,13 @@ int main()
                 }
         }
     while (tempt)
+=======
+    string input = "";
+
+    cout << "Enter a Number 0-4 to set up a Investment Portfolio: "<< endl;
+    cin >> tempt;
+    while (tempt != 9)
+>>>>>>> parent of 499b19a... Adding building.h
         {
             switch(tempt)
                 {
@@ -70,6 +77,8 @@ int main()
                     cin.clear();
                 }
                 break;
+                cin.clear();
+                cin.ignore();
 
                 case 2:
                 {
@@ -91,13 +100,16 @@ int main()
                         }
                 }
                 break;
-
+                cin.clear();
+                cin.ignore();
                 case 3:
                 {
 
 
                 }
                 break;
+                cin.clear();
+                cin.ignore();
                 } //closes switch
 
             //Stays in the loop to continue investment
@@ -143,6 +155,6 @@ case 3:{}break;
     }
 
 }
->>>>>>> 7a02a2b8ffca2649cdb1a37094c159d2d34e3a43
+>>>>>>> origin/master
     return 0;
 }// closes program
