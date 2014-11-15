@@ -44,21 +44,22 @@ public:
     {
         return Type;
     }
+    Investments * getNext(){return Next;}
 
-    void display()
+    void InvestDisplay()
     {
         cout << "Cost: " << Cost << endl;
         cout << "Value: " << Value << endl;
     }
 
 protected:
-    Investments * Next;
+    Investments *Next;
     int Type;
     double Cost;
     double Value;
 };
 
-class Stock:public Investments //Type = 1
+class Stock: public Investments //Type = 1
 {
 public:
     Stock()
@@ -79,16 +80,16 @@ public:
     {
         return Ticker;
     }
-    void Display()
+    void StockDisplay()
     {
-        cout << "You have stock with: "<< Ticker << endl;
+        cout << "You have stock with: " << Ticker << endl;
 
     }
 private:
     string Ticker;
 };
 
-class RealEstate:public Investments //Type = 2
+class RealEstate: public Investments //Type = 2
 {
 public:
     RealEstate()
@@ -114,13 +115,18 @@ public:
     {
         myBuild = new Building(s);
     }
+    void RealEDisplay()
+    {
+        cout << "Your Real Estate has " << Acres << " on it.";
+
+    }
 
 private:
     int Acres;
-    Building * myBuild;
+    Building *myBuild;
 };
 
-class Collection:public Investments //Type = 3
+class Collection: public Investments //Type = 3
 {
 public:
     Collection()
@@ -128,6 +134,7 @@ public:
 
         Name = ' ';
         Type = 3;
+        Next = NULL;
     };
 
     Collection(string s)
@@ -135,6 +142,7 @@ public:
 
         Name = s ;
         Type = 3;
+        Next = NULL;
     };
 
     void setName(string n)
@@ -146,7 +154,46 @@ public:
     {
         return Name;
     }
+    void CollectDisplay()
+    {
+        cout << "You Collect " << Name << endl;
+    }
 
 private:
     string Name;
+};
+
+class Item: public Investments
+{
+public:
+    Item()
+    {
+
+        Name = " ";
+        Type = 4;
+    }
+
+    Item(string s)
+    {
+        Name = s;
+        Type = 4;
+    }
+
+    void setName(string s)
+    {
+        Name = s;
+    }
+
+    string getName()
+    {
+        return Name;
+    }
+    void ItemDisplay()
+    {
+        cout << "In your Collection you have " << Name << endl;
+    }
+private:
+    Item *Next;
+    string Name;
+    int Type;
 };

@@ -22,6 +22,7 @@ int main()
     Stock *StockCurr = NULL;
     RealEstate *RealEstateCurr = NULL;
     Collection *CollectionCurr = NULL;
+    Item *ItemCurr = NULL;
 
     //Misc Variables
     int tempt = 0;
@@ -30,29 +31,31 @@ int main()
     double tempd2 = 0.00;
     int tempi = 0;
     char buildchar = ' ';
+    string CollectName = " ";
+    char ItemAdd = ' ';
 
-//Seed read with error catch if the value is out of bounds
-    cout << "Enter a Number 1-3 to set up a Investment Portfolio. Else hit 9 to exit: "<< endl;
+    //Seed read with error catch if the value is out of bounds
+    cout << "Enter a Number 1-3 to set up a Investment Portfolio. Else hit 9 to exit: " << endl;
     cin >> tempt;
 
-    if(tempt == 9)
+    if (tempt == 9)
         {
-            return 0;
+           return 0;
         }
-    while (tempt < 1 || tempt > 3)
+    while (tempt < 1 || tempt > 4)
         {
-            cout << "Please enter a new number: " << endl;
+            cout << "Please enter a new number. Else hit 9 to exit: " << endl;
             cin >> tempt;
-            if(tempt == 9)
+            if (tempt == 9)
                 {
                     return 0;
                 }
         }
-    while (tempt)
+    while (tempt != 9)
 
         while (tempt)
             {
-                switch(tempt)
+                switch (tempt)
                     {
                     case 1:
                     {
@@ -68,11 +71,12 @@ int main()
                         StockCurr -> setCost(tempd);
                         StockCurr -> setValue(tempd2);
                         cout << endl;
-                        StockCurr -> Display();
-                        StockCurr -> display();
+                        StockCurr -> StockDisplay();
+                        StockCurr -> InvestDisplay();
                         cin.clear();
                     }
                     break;
+
 
                     case 2:
                     {
@@ -82,7 +86,7 @@ int main()
                         newone = RealEstateCurr;
                         cout << "Does the property have a building on it (Y/N)?" << endl;
                         cin >> buildchar;
-                        if(buildchar == 'Y'||buildchar == 'y')
+                        if (buildchar == 'Y' || buildchar == 'y')
                             {
                                 cout << "How many Square Feet is the building: " << endl;
                                 cin >> tempd2;
@@ -94,35 +98,79 @@ int main()
                             }
                     }
                     break;
+
                     case 3:
                     {
-                        cout << "Name do you collect?: "<< endl;
-                        cin >>
+                        cout << "What do you collect: " << endl;
+                        cin >> CollectName;
+                        CollectionCurr = new Collection(CollectName);
+                        newone = CollectionCurr;
+
+                        while (ItemAdd == 'Y' || ItemAdd == 'y')
+                            {
+
+                            }
+                    } break;
+
+                    case 4:
+                    {
+
+                        cout << "Hello" << endl;
+
                     }
                     break;
-
 
                     } //closes switch
 
                 //Stays in the loop to continue investment
                 cout << endl;
-                cout << "Enter a Number 1-3 to set up a Investment Portfolio. Else hit 9 to exit: "<< endl;
+                cout << "Enter a Number 1-3 to set up a Investment Portfolio. Else hit 9 to exit: " << endl;
                 cin >> tempt;
-                if(tempt == 9)
-                    {
-                        return 0;
-                    }
+
                 while (tempt < 1 || tempt > 3)
                     {
                         cout << "Please enter a new number: " << endl;
                         cin >> tempt;
-                        if(tempt == 9)
+                        if (tempt == 9)
                             {
-                                return 0;
+                                break;
                             }
 
                     }
             }//closes loop
+
+    while(head != NULL)
+        {
+            tempt = curr->getType();
+
+            switch(tempt)
+                {
+
+                case 1:
+                {
+                    StockCurr=(Stock*)curr;
+                    StockCurr->StockDisplay();
+                }
+                break;
+                case 2:
+                {
+                    RealEstateCurr=(RealEstate*)curr;
+                    RealEstateCurr->RealEDisplay();
+                }
+                break;
+                case 3:
+                {
+                    CollectionCurr=(Collection*)curr;
+                    CollectionCurr->CollectDisplay();
+                }break;
+                case 4:
+                {
+                    ItemCurr=(Item*)curr;
+                    ItemCurr->ItemDisplay();
+                }break;
+                }
+                curr=curr->getNext();
+        }
 
     return 0;
 }// closes program
