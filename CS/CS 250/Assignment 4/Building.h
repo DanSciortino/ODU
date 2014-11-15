@@ -14,7 +14,7 @@ public:
     {
         return SquareFeet;
     }
-    void display()
+    void BuildDisplay()
     {
         cout << "The Building has" << SquareFeet << endl;
     }
