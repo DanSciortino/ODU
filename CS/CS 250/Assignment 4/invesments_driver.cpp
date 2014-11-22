@@ -7,7 +7,6 @@ A software package to manage a person’s individual investments
 
 #include <iostream>
 #include <string>
-#include <fstream>
 
 using namespace std;
 #include "Building.h"
@@ -64,12 +63,11 @@ int main()
                     cout << "Total Number of shares: " << endl;
                     cin >> tempi;
                     tempd2 = tempi * tempd;
-                    StockCurr -> setCost(tempd);
-                    StockCurr -> setValue(tempd2);
+                    StockCurr -> SetCost(tempd);
+                    StockCurr -> SetValue(tempd2);
                     cout << endl;
                     StockCurr -> StockDisplay();
                     StockCurr -> InvestDisplay();
-                    cin.clear();
                 }
                 break;
 
@@ -101,18 +99,14 @@ int main()
                     cin >> CollectName;
                     CollectionCurr = new Collection(CollectName);
                     newone = CollectionCurr;
-
-                    while (ItemAdd == 'Y' || ItemAdd == 'y')
-                        {
-
-                        }
                 } break;
 
                 case 4:
                 {
-
-                    cout << "Hello" << endl;
-
+                    cout << "What do you Items do you own: " << endl;
+                    cin >> CollectName;
+                    ItemCurr = new Item(CollectName);
+                    newone = ItemCurr;
                 }
                 break;
 
@@ -127,44 +121,67 @@ int main()
                     looper = false;
                 }
 
+            if(head == NULL)
+                {
+                    head = newone;
+                }
+
+            else
+                {
+                    curr = head;
+                    while( curr -> GetNext() != NULL)
+                        {
+                            curr = curr->GetNext();
+                        }
+                    curr->SetNext(newone);
+                }
+
         }//closes loop
 
-    curr = head;
+        curr = head;
 
-    while(curr != NULL)
-        {
-            tempt = curr->getType();
+        cout << endl << endl;
+        cout << "************ Your Investments ************"<< endl;
 
-            switch(tempt)
-                {
+        while(curr != NULL)
+            {
+                tempt = curr -> GetType();
 
-                case 1:
-                {
-                    StockCurr=(Stock*)curr;
-                    StockCurr->StockDisplay();
-                }
-                break;
-                case 2:
-                {
-                    RealEstateCurr=(RealEstate*)curr;
-                    RealEstateCurr->RealEDisplay();
-                }
-                break;
-                case 3:
-                {
-                    CollectionCurr=(Collection*)curr;
-                    CollectionCurr->CollectDisplay();
-                }
-                break;
-                case 4:
-                {
-                    ItemCurr=(Item*)curr;
-                    ItemCurr->ItemDisplay();
-                }
-                break;
-                }
-            curr=curr->getNext();
-        }
+                switch(tempt)
+                    {
+                    case 1:
+                    {
+                        StockCurr = (Stock*)curr;
+                        StockCurr -> StockDisplay();
+                        StockCurr -> InvestDisplay();
+                    }
+                    break;
+
+                    case 2:
+                    {
+                        RealEstateCurr = (RealEstate*)curr;
+                        RealEstateCurr -> RealEDisplay();
+                    }
+                    break;
+
+                    case 3:
+                    {
+                        CollectionCurr = (Collection*)curr;
+                        CollectionCurr -> CollectDisplay();
+                    }
+                    break;
+
+                    case 4:
+                    {
+                        ItemCurr = (Item*)curr;
+                        ItemCurr -> ItemDisplay();
+                    }
+                    break;
+                    }
+
+                curr = curr->GetNext();
+                 cout << endl;
+            }
 
     return 0;
 }// closes program

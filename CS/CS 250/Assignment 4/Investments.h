@@ -19,35 +19,38 @@ public:
     ~Investments() {}
 
     //Setters
-    void setCost(double c)
+    void SetCost(double c)
     {
         Cost = c;
     }
 
-    void setValue(double v)
+    void SetValue(double v)
     {
         Value = v;
     }
 
     //Getters
-    double getCost()
+    double GetCost()
     {
         return Cost;
     }
 
-    double getValue()
+    double GetValue()
     {
         return Value;
     }
 
-    int getType()
+    int GetType()
     {
         return Type;
     }
-    Investments *getNext()
-    
+    Investments *GetNext()
     {
         return Next;
+    }
+    void SetNext(Investments * I)
+    {
+        Next = I;
     }
 
     void InvestDisplay()
@@ -104,6 +107,7 @@ public:
     RealEstate(double d)
     {
         Acres = d;
+        Build = false;
         Type = 2;
     }
     void setAcres(int s)
@@ -115,18 +119,24 @@ public:
     {
         return Acres;
     }
+    bool getBuild()
+    {
+        return Build;
+    }
     void makeBuild(double s)
     {
         myBuild = new Building(s);
+        Build = true;
     }
     void RealEDisplay()
     {
-        cout << "Your Real Estate has " << Acres << " on it.";
-
+        cout << "Your Real Estate has " << Acres << " acres on it.";
+        myBuild -> BuildDisplay();
     }
 
 private:
     int Acres;
+    bool Build;
     Building *myBuild;
 };
 
