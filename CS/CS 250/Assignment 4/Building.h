@@ -16,7 +16,7 @@ public:
     }
     void BuildDisplay()
     {
-        cout << "The Building has " << SquareFeet << " square feet." << endl;
+        cout << "  The Building has " << SquareFeet << " square feet." << endl;
     }
 private:
     int Type;

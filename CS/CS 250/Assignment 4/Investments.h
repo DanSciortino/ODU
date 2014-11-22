@@ -48,7 +48,7 @@ public:
     {
         return Next;
     }
-    void SetNext(Investments * I)
+    void SetNext(Investments *I)
     {
         Next = I;
     }
@@ -140,6 +140,51 @@ private:
     Building *myBuild;
 };
 
+class Item: public Investments
+{
+public:
+    Item()
+    {
+
+        Name = " ";
+        Type = 4;
+    }
+
+    Item(string s)
+    {
+        Name = s;
+        Type = 4;
+    }
+
+    void SetName(string s)
+    {
+        Name = s;
+    }
+
+    string GetName()
+    {
+        return Name;
+    }
+    void ItemDisplay()
+    {
+        cout << "You have: " << Name << endl;
+    }
+    void ShowAll()
+    {
+        ItemDisplay();
+        if(Next != NULL)
+            {
+                Next -> ShowAll();
+            }
+
+    }
+private:
+    Item *Next;
+    string Name;
+    int Type;
+};
+
+
 class Collection: public Investments //Type = 3
 {
 public:
@@ -159,55 +204,47 @@ public:
         Next = NULL;
     };
 
-    void setName(string n)
+    void SetName(string n)
     {
         Name = n;
     }
 
-    string getName()
+    string GetName()
     {
         return Name;
     }
     void CollectDisplay()
     {
         cout << "You Collect " << Name << endl;
+        MyItems -> ShowAll();
     }
 
+    void ShowAll()
+    {
+        CollectDisplay();
+        if(Next != NULL)
+            {
+                MyItems -> ShowAll();
+            }
+
+    }
+    void AddItem(string n)
+    {
+        Item *NewItem;
+        NewItem = new Item;
+        NewItem -> SetName(n);
+        if (MyItems == NULL)
+            {
+                MyItems = NewItem;
+            }
+        else
+            {
+                NewItem -> SetNext(MyItems);
+            }
+            MyItems = NewItem;
+    }
 private:
     string Name;
+    Item *MyItems;
 };
 
-class Item: public Investments
-{
-public:
-    Item()
-    {
-
-        Name = " ";
-        Type = 4;
-    }
-
-    Item(string s)
-    {
-        Name = s;
-        Type = 4;
-    }
-
-    void setName(string s)
-    {
-        Name = s;
-    }
-
-    string getName()
-    {
-        return Name;
-    }
-    void ItemDisplay()
-    {
-        cout << "In your Collection you have " << Name << endl;
-    }
-private:
-    Item *Next;
-    string Name;
-    int Type;
-};
