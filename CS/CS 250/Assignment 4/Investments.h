@@ -44,7 +44,11 @@ public:
     {
         return Type;
     }
-    Investments * getNext(){return Next;}
+    Investments *getNext()
+    
+    {
+        return Next;
+    }
 
     void InvestDisplay()
     {

@@ -33,15 +33,12 @@ int main()
     char buildchar = ' ';
     string CollectName = " ";
     char ItemAdd = ' ';
+    bool looper = true;
 
     //Seed read with error catch if the value is out of bounds
-    cout << "Enter a Number 1-3 to set up a Investment Portfolio. Else hit 9 to exit: " << endl;
+    cout << "Enter a Number 1-4 to set up a Investment Portfolio. Else hit 9 to exit: " << endl;
     cin >> tempt;
 
-    if (tempt == 9)
-        {
-           return 0;
-        }
     while (tempt < 1 || tempt > 4)
         {
             cout << "Please enter a new number. Else hit 9 to exit: " << endl;
@@ -51,95 +48,90 @@ int main()
                     return 0;
                 }
         }
-    while (tempt != 9)
 
-        while (tempt)
-            {
-                switch (tempt)
-                    {
-                    case 1:
-                    {
-                        cout << "Enter the ticker information for your stock: " << endl;
-                        cin >> input;
-                        StockCurr = new Stock(input);
-                        newone = StockCurr;
-                        cout << "Cost of the share: " << endl;
-                        cin >> tempd;
-                        cout << "Total Number of shares: " << endl;
-                        cin >> tempi;
-                        tempd2 = tempi * tempd;
-                        StockCurr -> setCost(tempd);
-                        StockCurr -> setValue(tempd2);
-                        cout << endl;
-                        StockCurr -> StockDisplay();
-                        StockCurr -> InvestDisplay();
-                        cin.clear();
-                    }
-                    break;
+    while (looper == true)
+        {
+            switch (tempt)
+                {
+                case 1:
+                {
+                    cout << "Enter the ticker information for your stock: " << endl;
+                    cin >> input;
+                    StockCurr = new Stock(input);
+                    newone = StockCurr;
+                    cout << "Cost of the share: " << endl;
+                    cin >> tempd;
+                    cout << "Total Number of shares: " << endl;
+                    cin >> tempi;
+                    tempd2 = tempi * tempd;
+                    StockCurr -> setCost(tempd);
+                    StockCurr -> setValue(tempd2);
+                    cout << endl;
+                    StockCurr -> StockDisplay();
+                    StockCurr -> InvestDisplay();
+                    cin.clear();
+                }
+                break;
 
 
-                    case 2:
-                    {
-                        cout << "How many Acres does the property have: " << endl;
-                        cin >> tempd;
-                        RealEstateCurr = new RealEstate(tempd);
-                        newone = RealEstateCurr;
-                        cout << "Does the property have a building on it (Y/N)?" << endl;
-                        cin >> buildchar;
-                        if (buildchar == 'Y' || buildchar == 'y')
-                            {
-                                cout << "How many Square Feet is the building: " << endl;
-                                cin >> tempd2;
-                                RealEstateCurr->makeBuild(tempd2);
-                            }
-                        else
-                            {
-                                break;
-                            }
-                    }
-                    break;
+                case 2:
+                {
+                    cout << "How many Acres does the property have: " << endl;
+                    cin >> tempd;
+                    RealEstateCurr = new RealEstate(tempd);
+                    newone = RealEstateCurr;
+                    cout << "Does the property have a building on it (Y/N)?" << endl;
+                    cin >> buildchar;
+                    if (buildchar == 'Y' || buildchar == 'y')
+                        {
+                            cout << "How many Square Feet is the building: " << endl;
+                            cin >> tempd2;
+                            RealEstateCurr->makeBuild(tempd2);
+                        }
+                    else
+                        {
+                            break;
+                        }
+                }
+                break;
 
-                    case 3:
-                    {
-                        cout << "What do you collect: " << endl;
-                        cin >> CollectName;
-                        CollectionCurr = new Collection(CollectName);
-                        newone = CollectionCurr;
+                case 3:
+                {
+                    cout << "What do you collect: " << endl;
+                    cin >> CollectName;
+                    CollectionCurr = new Collection(CollectName);
+                    newone = CollectionCurr;
 
-                        while (ItemAdd == 'Y' || ItemAdd == 'y')
-                            {
+                    while (ItemAdd == 'Y' || ItemAdd == 'y')
+                        {
 
-                            }
-                    } break;
+                        }
+                } break;
 
-                    case 4:
-                    {
+                case 4:
+                {
 
-                        cout << "Hello" << endl;
+                    cout << "Hello" << endl;
 
-                    }
-                    break;
+                }
+                break;
 
-                    } //closes switch
+                } //closes switch
 
-                //Stays in the loop to continue investment
-                cout << endl;
-                cout << "Enter a Number 1-3 to set up a Investment Portfolio. Else hit 9 to exit: " << endl;
-                cin >> tempt;
+            //Stays in the loop to continue investment
+            cout << endl;
+            cout << "Enter a Number 1-4 to set up a Investment Portfolio. Else hit 9 to exit: " << endl;
+            cin >> tempt;
+            if (tempt == 9)
+                {
+                    looper = false;
+                }
 
-                while (tempt < 1 || tempt > 3)
-                    {
-                        cout << "Please enter a new number: " << endl;
-                        cin >> tempt;
-                        if (tempt == 9)
-                            {
-                                break;
-                            }
+        }//closes loop
 
-                    }
-            }//closes loop
+    curr = head;
 
-    while(head != NULL)
+    while(curr != NULL)
         {
             tempt = curr->getType();
 
@@ -162,14 +154,16 @@ int main()
                 {
                     CollectionCurr=(Collection*)curr;
                     CollectionCurr->CollectDisplay();
-                }break;
+                }
+                break;
                 case 4:
                 {
                     ItemCurr=(Item*)curr;
                     ItemCurr->ItemDisplay();
-                }break;
                 }
-                curr=curr->getNext();
+                break;
+                }
+            curr=curr->getNext();
         }
 
     return 0;
