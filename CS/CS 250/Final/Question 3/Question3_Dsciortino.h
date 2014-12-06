@@ -1,7 +1,7 @@
 class Fish
 {
 public:
-///Constructor
+    ///Constructor
     Fish()
     {
         ID = 10000;
@@ -12,7 +12,19 @@ public:
         Location = 'A';
         Next = NULL;
     }
-///Setters
+
+    Fish(int I, double D, int M, int d, int Y, char L)
+    {
+        ID = I;
+        Weight = D;
+        Month = M;
+        Day = d;
+        Year = Y;
+        Location = L;
+        Next = NULL;
+    }
+
+    ///Setters
     void SetID(int I)
     {
         ID = I;
@@ -25,12 +37,19 @@ public:
     {
         Month = M;
     }
-    void SetDay(int D){Day = D;}
+    void SetDay(int D)
+    {
+        Day = D;
+    }
     void SetYear(int Y)
     {
         Year = Y;
     }
-///Getters
+    void SetLocation(char L)
+    {
+        Location = L;
+    }
+    ///Getters
     int GetID()
     {
         return ID;
@@ -43,7 +62,10 @@ public:
     {
         return Month;
     }
-    int GetDay(){return Day;}
+    int GetDay()
+    {
+        return Day;
+    }
     int GetYear()
     {
         return Year;
@@ -53,16 +75,40 @@ public:
         return Location;
     }
 
-///Galactus Destroyer of Worlds
-    ~Fish();
+    ///Galactus Destroyer of Worlds
+    ~Fish(){};
 
-///Displays
-void Display(){ cout << " Fish ID " << ID << " Weight "
-                    << Weight << " , Caught "<< Month
-                    << " " << Day<< " " << Year
-                    << " At Location " << Location << endl;}
-void ShowAll(){Display();
-if(Next != NULL){Next -> ShowAll();}}
+    ///Displays
+    void Display()
+    {
+        cout << "Fish ID " << ID << " Weight "
+             << Weight << " , Caught " << Month
+             << " " << Day << " " << Year
+             << " At Location " << Location << endl;
+    }
+    void ShowAll()
+    {
+        Display();
+        if (Next != NULL)
+        {
+            Next -> ShowAll();
+        }
+        cout << endl;
+    }
+
+    ///I dont even know how to function
+    void MakeNew()
+    {
+        Next = new Fish();
+    }
+    Fish *GetNext()
+    {
+        return Next;
+    }
+    void SetNext(Fish * N)
+    {
+        Next = N;
+    }
 
 private:
     Fish * Next;
@@ -73,14 +119,3 @@ private:
     int Year;
     char Location;
 };
-
-
-void DisplayMenu(){
-cout << "Select an option" << endl;
-cout << "(1) Report a Fish caught" << endl;
-cout << "(2) Display all caught Fish" << endl;
-cout << "(3) Search for a specific Fish" << endl;
-cout << "(4) Show This Menu" << endl;
-cout << "(5) Quit the Application" << endl;
-cout << "Enter a Number 1-5" << endl;
-}
