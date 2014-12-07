@@ -6,6 +6,7 @@ of fish and then have the code generate a random x, y, z position. Then give eac
 
 #include <iostream>
 #include <stdlib.h>
+#include <time.h>
 #include <math.h>
 
 using namespace std;
@@ -29,17 +30,39 @@ int main()
 
     for(int i = 0; i < Number; i++)
     {
-        TempX = rand() % 20 + 0;
+        srand(time(NULL));
+        TempX = rand() % 20 + i;
         if (TempX > 10)
         {
-            TempX = ceil(TempX) / 2;
+            TempX = ceil(TempX) / -2;
         }
-        else{
+        else
+        {
             TempX = TempX / 2;
 
         }
-        TempY = rand() % 20 + 0;
-        TempZ = rand() % 20 + 0;
+
+        TempY = rand() % 20 + i;
+        if (TempY > 10)
+        {
+            TempY = ceil(TempY) / -2;
+        }
+        else
+        {
+            TempY = TempY / 2;
+
+        }
+
+        TempZ = rand() % 20 + i;
+        if (TempZ > 10)
+        {
+            TempZ = ceil(TempZ) / -2;
+        }
+        else
+        {
+            TempZ = TempZ / 2;
+
+        }
 
         if(School == NULL)
         {
