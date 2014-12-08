@@ -1,4 +1,7 @@
 /*
+Daniel Sciortino
+CS 250
+Final - Question 2
 Create a linkable class fish, each fish has an id number, an x, y, and z location. Allow the user to enter the number
 of fish and then have the code generate a random x, y, z position. Then give each fish a position with random +-
 10% changes to the x, y, z of the first fish, thus creating a school. Display the info for the school to the screen.
@@ -86,5 +89,6 @@ int main()
 
     School -> ShowAll();
 
+    delete School;
     return 0;
 }

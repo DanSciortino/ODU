@@ -49,7 +49,7 @@ public:
 ///Function Junction
     void MakeNew()
     {
-        Next =new Fish;
+        Next = new Fish;
     }
     Fish * GetNext()
     {
