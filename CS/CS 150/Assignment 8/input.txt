@@ -1,0 +1,19 @@
+John        Smith       84230   757-424-6055  3
+
+Jane        Public      64131   757-640-5555  5
+
+Susie       Pennywise   52632   804-243-8572  0
+
+Richie      Rich        75383   555-555-5555  10
+
+William     Baker       29374   804-312-5539  2
+
+Natalie     Meyers      42485   971-387-3542  1
+
+Robert      Jones       39386   234-432-2341  4
+
+John        Adams       12537   804-293-1735  6
+
+Benjamin    Franklin    37768   432-694-3173  0
+
+Lamont      Williams    69389   757-623-8000  2

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1379536725 source:z:\lab 3 part a\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+

@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1382560087 source:z:\midterm-template-b.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<cmath>
+	<ctime>
+	<iomanip>
+	<string>
+	<cstdlib>
+

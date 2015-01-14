@@ -1,0 +1,18 @@
+********************
+CUSTOMER DETAILS 
+********************
+
+
+Account Number: 157744232
+Amount Due:     240.00
+
+Account Number: 253453534
+Amount Due:     47.50
+
+Account Number: 335345435
+Amount Due:     47.50
+
+Account Number: 445345345
+Amount Due:     240.00
+
+The account number: 545345345 has an invalid cutomertype

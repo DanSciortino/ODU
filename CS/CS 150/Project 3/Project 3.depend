@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1383774266 source:z:\cs 150\project 3\main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<cmath>
+	<ctime>
+	<iomanip>
+	<string>
+	<cstdlib>
+	<algorithm>
+

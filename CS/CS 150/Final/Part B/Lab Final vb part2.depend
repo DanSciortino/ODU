@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1386190308 source:z:\cs 150\lab final vb part2\main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<cmath>
+	<ctime>
+	<iomanip>
+	<string>
+	<cstdlib>
+	<algorithm>
+

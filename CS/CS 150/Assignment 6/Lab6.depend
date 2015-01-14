@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1381169354 source:z:\lab6\main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<cmath>
+	<ctime>
+	<iomanip>
+	<string>
+	<cstdlib>
+	"A6-functions.h"
+
+1381169577 z:\lab6\a6-functions.h
+
+1381169567 source:z:\lab6\a6-functions.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<cmath>
+	<ctime>
+	<iomanip>
+	<string>
+	<cstdlib>
+	"A6-functions.h"
+
+1382047281 source:z:\lab6\a6-template.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<cmath>
+	<ctime>
+	<iomanip>
+	<string>
+	<cstdlib>
+	"A6-functions.h"
+

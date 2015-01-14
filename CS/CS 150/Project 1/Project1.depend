@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1380232180 source:z:\project1\main.cpp
+	<iostream>
+	<cmath>
+	<iomanip>
+	<fstream>
+	<string>
+

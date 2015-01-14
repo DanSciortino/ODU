@@ -1,0 +1,8 @@
+Smith 50 5
+Jones 70 5
+Hacker 42 3
+Henson 10 8
+Byrd 30 1
+Jarman 25 10
+Shaffer 12 7
+Klaus 6 3

@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1380741874 source:z:\lab5\main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<cmath>
+	<ctime>
+	<iomanip>
+	<string>
+	<cstdlib>
+

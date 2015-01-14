@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1380141361 source:z:\lab4\main.cpp
+	<iostream>
+	<iomanip>
+	<fstream>
+
+1380142120 source:z:\cs 150\lab4\main.cpp
+	<iostream>
+	<iomanip>
+	<fstream>
+

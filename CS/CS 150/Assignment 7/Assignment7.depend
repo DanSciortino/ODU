@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1383165877 source:z:\cs 150\assignment7\main.cpp
+	<iostream>
+	<iomanip>
+	<fstream>
+	<cstdlib>
+	<cmath>
+

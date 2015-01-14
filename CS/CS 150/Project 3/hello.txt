@@ -1,0 +1,328 @@
+/*#include <iostream>
+using namespace std;
+int main(){
+int a = 0;
+char b = 'B';
+a = a - b;
+
+cout << a;
+}
+*/
+
+//Programmer : Daniel Sciortino
+//Date       : 30 Oct 2013
+//Lab        : Project 3
+//Description: Complete a program using a ceaser ciper
+
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <cmath>
+#include <ctime>
+#include <iomanip>
+#include <string>
+#include <cstdlib>
+#include <algorithm>
+
+using namespace std;
+
+//Constant Declarations
+const int W_WIDTH = 80; ///< Width of the terminal window
+char key[26] = {' '};  /// Makes the key array to be filled
+//Forward Declarations - Function Prototypes
+
+///
+/// Utility Function to read a value from an input stream ( any type with a operator>> defined ) - non-interactive
+///
+template<class T>
+bool readValue( istream &in_stream, T &value_in);
+
+///
+/// Utility Function to read a value from an input stream - interactive
+///
+template<class T>
+bool readValue( istream &in_stream, T &value_in, string message, int width=34 );
+
+///
+/// Print a horizontal line
+///
+void printHorizontalLine( ostream& outs, char line_char, int width );
+
+///
+/// Print a centered heading
+///
+void printHeading( string title, int width );
+
+///
+/// Print the stylized program/project heading
+///
+void printProjectHeading( ostream& outs, int width );
+
+///
+/// Apply the caesar cipher
+///
+char caesarShift( char to_shift, int shift_value);
+
+///
+/// Print the encode and decode selection menu
+///
+void printMenu();
+
+///
+/// Read the shift value from the keyboard
+///
+int readShiftValue();
+
+
+void initializeArray(string str, char list[], int listSize);
+
+///
+/// Main Function
+///
+
+int main()
+{
+    fstream in_file;            ///< Input File Stream
+    fstream out_file;           ///< Output File Stream
+
+    string input_filename;      ///< Input File Name
+    string output_filename;     ///< Output File Name
+
+    string line;                ///< String to store each line
+
+    int shift_value;            ///< Shift Value for caesar Cipher
+
+    char choice       = '\0';   ///< User menu selection
+    char current_char = '\0';   ///< Current character to be processed
+
+    //Print the program heading
+    printProjectHeading( cout, W_WIDTH);
+
+    // Read the input and output file names
+    readValue( cin, input_filename,  "Read from which file? ");
+    readValue( cin, output_filename, "Write to which file? ");
+
+    //Open the filestreams
+    in_file.open( input_filename.c_str(), ios::in );
+    out_file.open( output_filename.c_str(), ios::out );
+
+    //Validate the filestreams
+    if( in_file.fail() )
+    {
+        cerr << "Input file is invalid.\n";
+        return 1;
+    }
+
+    if( out_file.fail() )
+    {
+        cerr << "Output file is invalid.\n";
+        return 2;
+    }
+
+    //Read the Shift "Key" Value
+    shift_value = readShiftValue( );
+
+    //Display the Encode Decode Selection Menu
+    printMenu();
+
+    //Read the User Selection and convert to uppercase
+    readValue( cin, choice, "Select an Option: " );
+    choice = toupper( choice );
+
+    while (choice != 'E' && choice != 'D')
+    {
+
+        cerr << "Invalid operation type" << endl;
+        cout << "Re-enter a selection: ";
+        cin >> choice;
+    }
+
+    //Validate the user selection
+    //D     - decode - reverse the shift direction
+    //E     - encode - no addional logic
+    //other - error and quit
+    if( choice == 'D' )
+    {
+        shift_value = -1 * ( shift_value );
+    }
+
+
+    //read each line of the file
+    while(  getline( in_file, line ) )
+    {
+        //Iterate through each character in the line string
+        for( int i = 0; i < line.length(); i++ )
+        {
+            //Retrieve the i-th character from the string
+            //MODIFY the following line
+            ///Hint: array subscripts - line[ some # ]
+            char *lineToProcess;                                //declare pointer
+            int arraySize = line.length();                      //declare dynamic array size variable equal to length of string
+            cout << line.length();
+            lineToProcess = new char[arraySize];                //declare dynamic array and assign to pointer
+cout << lineToProcess;
+            initializeArray(line, lineToProcess, arraySize);    //initialize array with contents of string line
+
+            for (int a = 0; a < arraySize; a++)                 //assign each character of array to current char and perform encode/decode
+            {
+                current_char = lineToProcess[a]- lineToProcess[i];                 //assigns array index to current char
+                delete [] lineToProcess;
+            }
+                //Convert the line to uppercase
+                current_char = toupper( current_char );
+
+                //If the character is in the range A to Z, apply the caesar shift
+                //otherwise output the character unmodified
+                if( current_char >= 'A' && current_char <= 'Z' )
+                {
+                    out_file << caesarShift( current_char, shift_value );
+                    cout << caesarShift( current_char, shift_value );
+                }
+                else
+                {
+                    out_file << current_char;
+                    cout << current_char;
+                }
+
+        }
+        //If the current line is not the last, output a newline character
+        // MODIFY - Do not output an extra newline at the end of the file
+        out_file << "\n";
+    }
+
+    //Close the input and output files
+    in_file.close();
+    out_file.close();
+
+}
+
+///
+///
+///
+template<class T>
+bool readValue( istream &in_stream, T &value_in)
+{
+    in_stream >> value_in;
+
+    //Return False on read error
+    return in_stream.good();
+}
+
+///
+///
+///
+template<class T>
+bool readValue( istream &in_stream, T &value_in, string message, int width )
+{
+    cout << left << setw( width ) << message << ": ";
+
+    return readValue( in_stream, value_in );
+}
+
+///
+///
+///
+void printHorizontalLine( ostream& outs, char line_char, int width )
+{
+    outs << setfill( line_char ) << left << setw( width ) << line_char << "\n";
+    //reset outs fill
+    outs.fill( ' ' );
+}
+
+///
+///
+///
+void printHeading( string title, int width )
+{
+    //Declare Variables
+    int magic_width = 0;
+
+    magic_width =  (width/2) - (title.length()/2) + title.length();
+
+    cout << "\n"
+         << left  << setfill('*') << setw( width ) << "*" << "\n"
+         << right << setfill(' ') << setw( magic_width ) << title << "\n"
+         << left  << setfill('*') << setw( width ) << "*" << "\n";
+
+    //reset cout
+    cout.clear();
+    cout.fill(' ');
+}
+
+///
+/// COMPLETE THIS FUNCTION
+///
+void printProjectHeading( ostream& outs, int width )
+{
+    //Variable Declarations
+    int length = width / 2;
+
+    //Output the top line
+    printHorizontalLine( outs, '*', width );
+    //Output the title text
+    cout << right << setfill(' ') << setw( length ) << "Daniel Sciortino" << endl;
+    cout  << right << setfill(' ') << setw( length ) << "Oct 30 2013" << endl;
+    cout << right << setfill(' ') << setw( length ) << "Project 3" << endl;
+    //output the bottom line
+    printHorizontalLine( outs, '*', width );
+}
+
+///
+/// COMPLETE THIS FUNCTION
+///
+int readShiftValue()
+{
+    int shift_value = 0;
+
+    //Read the value
+    readValue( cin, shift_value, "Enter a shift value");
+
+    //Validate the shift value - must be in the range 1 to 25 including 1 and 25
+
+
+    while(shift_value > 25 || shift_value < 1)
+    {
+        cerr << "The input must be between 1 and 25 : ";
+        cin >> shift_value;
+
+    }
+    return shift_value;
+}
+
+///
+/// COMPLETE THIS FUNCTION
+///
+void printMenu()
+{
+    //Print the Menu Heading
+    printHeading( "Operations Menu", W_WIDTH);
+
+    //Print the Menu
+    cout << "Press 'E' to encode." << endl;
+    cout << "Press 'D' to decode." << endl;
+
+}
+
+///
+/// COMPLETE THIS FUNCTION
+///
+char caesarShift( char to_shift, int shift_value)
+{
+    char result_char = '\0';  ///< resulting char
+    //Replace the following line with the shift code
+    for (char i ='A' ; i <= 'Z' ; i++)
+    {
+        key[int(i - 'A')] = 'A' + ((i - 'A' + result_char) % 26);
+    }
+
+    return result_char;
+}
+void initializeArray(string str, char list[], int listSize)
+{
+    int index;
+
+    for (index = 0; index < listSize; index++)
+            {
+                list[index] = str.at(index);
+            }
+}

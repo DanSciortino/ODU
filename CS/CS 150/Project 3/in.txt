@@ -1,0 +1,21 @@
+********************************************************************************
+                                 Thomas Kennedy
+                                 07 October 2013
+                                P2-Solution-2.cpp
+                             Integer Classification
+********************************************************************************
+--------------------------------------------------------------------------------
+  # Integers   |     Even      |     Zero      |      Odd      |    Odd/Even
+--------------------------------------------------------------------------------
+            20 |             9 |             2 |            11 |         1.222
+             7 |             6 |             2 |             1 |         0.167
+            20 |             9 |             2 |            11 |         1.222
+
+
+File:     P2-input1.txt     Compiled By:    Steve Miller
+
+          P2-input2.txt                     Johnny FokkerTriPlane
+          P2-input1.txt                     Steve Miller
+
+
+Thank you for using the Integer Classification utility.
