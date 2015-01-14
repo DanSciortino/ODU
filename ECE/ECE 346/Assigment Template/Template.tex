@@ -1,0 +1,93 @@
+%%%%%%%%%%%%%%%%
+%
+%
+%
+%
+%
+%
+%
+%
+%%%%%%%%%%%%%%%%
+%---------
+% Misc. Document Functions
+%---------
+\newcommand{\Signature}[3][]{%
+  \parbox{\textwidth}{
+    \centering #3  \
+    \vspace{1cm}
+
+    \parbox{15cm}{
+      \centering
+      \rule{8cm}{1pt}\\ 
+    }
+
+    }
+ }
+%---------
+% Start Document
+%--------- 
+\documentclass[12pt]{report}
+
+
+\begin{document}
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+ 
+\Huge\textsc{ Old Dominion University}\\[1.cm] 
+\textsc{\Large Electrical Computer Engineering}\\[.2cm]  
+\textsc{\Large ECE 346}\\[.5cm] 
+
+%---------
+% Assignment information
+%---------
+\vspace{.5cm}
+\large\begin{center}
+Assignment No.
+\end{center}
+
+%---------
+% Professor information
+%---------
+\vspace{.3cm}
+\begin{center}
+\emph{Professor:}\large \\
+Youssif \textsc{Al-Nashif}
+\end{center} \large
+
+%---------
+% Me
+%---------
+\begin{center}
+Daniel \textsc{Sciortino }
+\end{center} \large
+\vspace{1cm}
+%---------
+% Date
+%---------
+{\large \today}\\[2cm] % Date, change the \today to a set date if you want to be precise
+
+%---------
+% Honor Code
+%---------
+\vspace{1cm}
+\small\begin{center}
+“I pledge to support the honor system of Old Dominion University. I will refrain from any form of academic dishonesty or deception, such as cheating or plagiarism. I am aware that as a member of the academic community, it is my responsibility to turn in all suspected violators of the honor system. I will report to Honor Council hearings if I am summoned.” By attending Old Dominion University you have accepted the responsibility to abide by this code. This is an institutional policy, approved by the Board of Visitors.
+\end{center}
+
+ 
+%---------
+% Signature
+%---------
+\Signature{Daniel Sciortino}
+
+\vfill % Fill the rest of the page with whitespace
+
+%---------
+% End of the first page
+%---------
+\end{titlepage}
+\pagebreak 
+\end{document}
