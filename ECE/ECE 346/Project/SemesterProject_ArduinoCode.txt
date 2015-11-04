@@ -1,0 +1,94 @@
+#include <Adafruit_GFX.h>   // Core graphics library
+#include <RGBmatrixPanel.h> // Hardware-specific library
+#define F2(progmem_ptr) (const __FlashStringHelper *)progmem_ptr
+
+#define CLK 8 
+#define LAT A3
+#define OE  9
+#define A   A0
+#define B   A1
+#define C   A2
+
+RGBmatrixPanel matrix(A, B, C, CLK, LAT, OE, false);
+
+const char str1[] PROGMEM = "ECE 346";
+int    textX2   = matrix.width(),
+        hue1   =  0;
+
+const char str[] PROGMEM = "MicroControllers";
+int    textX   = matrix.width(),
+       textMin = sizeof(str) * -12,
+       hue     = 0;
+       
+int ledPin = 12;						//Initialize pin 12 on the Arduino board and name it ledPin
+int val = 0;							//Create integer named val and set it equal to 0
+
+void setup() {
+
+  matrix.begin();
+  matrix.setTextWrap(false); // Allow text to run off right edge
+  matrix.setTextSize(1); 
+  
+  pinMode(ledPin, INPUT);
+    
+  // draw some text!
+  matrix.setCursor(1, 1);   // start at top left, with one pixel of spacing
+  matrix.setTextSize(2);    // size 1 == 8 pixels high
+  
+  // print each letter with a rainbow color
+  matrix.setTextColor(matrix.Color333(0,0,255));
+  matrix.print('O');
+  delay(300);
+  matrix.setTextColor(matrix.Color333(255,255,255)); 
+  matrix.print('D');
+  delay(300);
+  matrix.setTextColor(matrix.Color333(0,0,255));
+  matrix.print('U');
+  delay(300);
+}
+  
+
+void loop() {
+  
+  matrix.setTextSize(1);    // size 1 == 8 pixels high
+  
+  val = digitalRead(ledPin);
+  while(val == HIGH){
+     val = digitalRead(ledPin);
+  }
+  
+//Clear background
+  matrix.fillScreen(0);
+  
+// Draw big scrolly text on top
+  matrix.setTextColor(matrix.ColorHSV(hue1, 200, 255, true));
+  matrix.setCursor(textX2+25, 0);
+  matrix.print(F2(str1)); 
+
+// Move text left (w/wrap), increase hue
+  if((--textX2) < textMin) textX2 = matrix.width();
+  hue1 += 7;                                               // Allows the letters to change colors consistently
+  if(hue1 >= 1000) hue1 -= 1000;
+
+// Update display
+  matrix.swapBuffers(false);
+   
+
+// Draw big scrolly text on top
+  matrix.setTextColor(matrix.ColorHSV(hue, 255, 255, true));
+  matrix.setCursor(textX, 9);
+  matrix.print(F2(str));
+  delay(25);
+ 
+
+// Move text left (w/wrap), increase hue
+  if((--textX) < textMin) textX = matrix.width();
+  hue += 7;                                               // Allows the letters to change colors consistently
+  if(hue >= 1536) hue -= 1536;
+
+
+// Update display
+  matrix.swapBuffers(false);
+   
+}
+
