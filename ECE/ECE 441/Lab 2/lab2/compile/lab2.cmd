@@ -1,0 +1,1 @@
+-w -s "c:\Users\Megatron\Documents\testWorkspaces\lab2\library.cfg"  -j "c:\Users\Megatron\Documents\testWorkspaces\lab2\projlib.cfg"  -d "c:\Users\Megatron\Documents\testWorkspaces\lab2\compile"   -work lab2  -O3 -e 100 -2002 "c:/Users/Megatron/Documents/testWorkspaces/lab2/src/lab2_1.vhd"

@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: c:\Users\Megatron\Documents\testWorkspaces\lab2\src\lab2_1.vhd" 
+MESSAGE "Compile Entity "lab2_1"" 
+MESSAGE "Compile Architecture "Behavior" of Entity "lab2_1"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]" 

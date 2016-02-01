@@ -1,0 +1,9 @@
+33
+~E 1 "./../src/lab2.vhd" 5 lab2
+~A 1 "./../src/lab2.vhd" 21 Behavior
+~E 1 "./../src/lab2part1.vhd" 5 lab2_1
+~A 1 "./../src/lab2_1.vhd" 12 Behavior
+~E 1 "./../src/lab2_2.vhd" 5 lab2_2
+~A 1 "./../src/lab2_2.vhd" 21 Behavior
+~E 1 "./../src/lab2_3.vhd" 5 lab2_3
+~A 1 "./../src/lab2_3.vhd" 21 Behavior

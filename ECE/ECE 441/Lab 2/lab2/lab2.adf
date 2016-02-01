@@ -1,0 +1,134 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=lab2
+
+[Library]
+lab2=.\lab2\lab2.lib
+lab2_timing=.\lab2_timing\lab2_timing.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FAMILY=Quartus CycloneIVE
+SYNTH_TOOL=MV_QUARTUS_SYNTHESIS150
+RUN_MODE_SYNTH=0
+CSYNTH_TOOL=
+PHYSSYNTH_TOOL=
+IMPL_TOOL=
+FLOWTOOLS=IMPL_WITH_SYNTH
+ON_SERVERFARM_SYNTH=0
+ON_SERVERFARM_IMPL=0
+ON_SERVERFARM_SIM=0
+DVM_DISPLAY=NO
+SYNTH_STATUS=warnings
+IMPL_STATUS=warnings
+VerilogDirsChanged=0
+FUNC_LIB=lab2
+TIM_LIB=lab2_timing
+fileopenfolder=C:\Users\Megatron\Documents\testWorkspaces\lab2\src
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+lab2=.
+Active_lib=
+
+[IMPLEMENTATION]
+UCF=
+DEVICE_TECHNOLOGY_MIGRATION_LIST=
+LAST_RUN=1454034302
+
+[SYNTHESIS]
+FAMILY=Quartus CycloneIVE
+DEVICE=EP4CE115F29C
+SPEED=7
+TOPLEVEL=lab2_3
+JOB_DESCRIPTION=SynthesisTask
+JOB_SFM_RESOURCE=
+ENABLE_SIGNALTAP=0
+SERVERFARM_INCLUDE_INPUT_FILES=*.*
+SERVERFARM_EXCLUDE_INPUT_FILES=
+OVERWRITE_PROJECT=1
+AUTO_CLOSE=0
+QSF_FILE_SELECTION=synthesis/lab2_3.qsf
+CHECK_PROJECT_OUTPUT_DIRECTORY=0
+CHECK_OPTIMIZE_HOLD_TIMING=1
+USE_SIGNALTAP_FILE=
+ENABLE_LOGIC_ANALYZER_INTERFACE=0
+USE_LOGIC_ANALYZER_INTERFACE_FILE=
+OLD_FAMILY=Quartus CycloneIVE
+CHECK_IMPORT_PIN_ASSIGNMENTS=1
+IMPORT_PIN_ASSIGNMENTS=.\synthesis\lab2.qsf
+CHECK_GENERATE_FPGA_EXCHANGE_FILE=0
+GENERATE_FPGA_EXCHANGE_FILE=.\symbols\fpgaxchange
+BTM_IO_STANDARD=1.2V
+DEFAULT_QUARTUS_SETTINGS_FILE=..\..\..\..\..\altera_lite\15.1\quartus\bin64\assignment_defaults.qdf
+OUTPUT_IO_TIMING_NEAR_END_VMEAS_RISE=Half Signal Swing
+OUTPUT_IO_TIMING_NEAR_END_VMEAS_FALL=Half Signal Swing
+OUTPUT_IO_TIMING_FAR_END_VMEAS_RISE=Half Signal Swing
+OUTPUT_IO_TIMING_FAR_END_VMEAS_FALL=Half Signal Swing
+LAST_RUN=1454034302
+
+[sdf.ea.lab2-Behavior]
+0=synthesis\simulation\activehdl\lab2_vhd.sdo| /lab2, Average, No
+
+[SIM.TIME]
+TOPLEVEL=lab2_3
+SDF_PATH=c:/Users/Megatron/Documents/testWorkspaces/lab2/synthesis/simulation/activehdl/lab2_3_vhd.sdo
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=lab2|Behavior|0 
+ShowHide=ShowTopLevel
+Selected=
+
+[Groups]
+timing=1
+
+[Files]
+/lab2_3.vhd=-1
+/lab2_2.vhd=-1
+/lab2_1.vhd=-1
+timing/..\..\synthesis\simulation\activehdl\lab2.vho=-1
+timing/..\..\synthesis\simulation\activehdl\lab2_vhd.sdo=-1
+timing/..\..\synthesis\simulation\activehdl\lab2_3.vho=-1
+timing/..\..\synthesis\simulation\activehdl\lab2_3_vhd.sdo=-1
+timing/..\..\synthesis\simulation\activehdl\lab2_1.vho=-1
+timing/..\..\synthesis\simulation\activehdl\lab2_1_vhd.sdo=-1
+timing/..\..\synthesis\simulation\activehdl\lab2_2.vho=-1
+timing/..\..\synthesis\simulation\activehdl\lab2_2_vhd.sdo=-1
+
+[Files.Data]
+.\src\lab2_3.vhd=VHDL Source Code
+.\src\lab2_2.vhd=VHDL Source Code
+.\src\lab2_1.vhd=VHDL Source Code
+.\synthesis\simulation\activehdl\lab2.vho=VHDL SOURCE CODE
+.\synthesis\simulation\activehdl\lab2_vhd.sdo=SDF FILE
+
+.\synthesis\simulation\activehdl\lab2_3.vho=VHDL SOURCE CODE
+.\synthesis\simulation\activehdl\lab2_3_vhd.sdo=SDF FILE
+.\synthesis\simulation\activehdl\lab2_1.vho=VHDL SOURCE CODE
+.\synthesis\simulation\activehdl\lab2_1_vhd.sdo=SDF FILE
+.\synthesis\simulation\activehdl\lab2_2.vho=VHDL SOURCE CODE
+.\synthesis\simulation\activehdl\lab2_2_vhd.sdo=SDF FILE

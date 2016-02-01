@@ -1,0 +1,16 @@
+timestamp=1454034480958
+
+[~A]
+ModifyID=20
+Version=73
+
+[lab2]
+A/structure=*21|./../synthesis/simulation/activehdl/lab2.vho|141|
+
+[~MFT]
+0=0|0lab2_timing.mgf|0|0
+
+[~U]
+lab2=11|0*0|
+
+

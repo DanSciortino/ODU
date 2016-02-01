@@ -1,0 +1,144 @@
+Flow report for lab2
+Thu Jan 28 18:31:42 2016
+Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Flow Failed - Thu Jan 28 18:31:42 2016      ;
+; Quartus Prime Version              ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
+; Revision Name                      ; lab2                                        ;
+; Top-level Entity Name              ; lab2                                        ;
+; Family                             ; Cyclone IV E                                ;
+; Device                             ; EP4CE115F29C7                               ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 01/28/2016 18:31:12 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; lab2                ;
++-------------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                               ;
++--------------------------------------------------+-----------------------------------------------------+---------------+-------------+-------------------------+
+; Assignment Name                                  ; Value                                               ; Default Value ; Entity Name ; Section Id              ;
++--------------------------------------------------+-----------------------------------------------------+---------------+-------------+-------------------------+
+; ADV_NETLIST_OPT_RETIME_CORE_AND_IO               ; Off                                                 ; On            ; --          ; --                      ;
+; BOARD_MODEL_FAR_C                                ; Open                                                ; --            ; --          ; 1.2V                    ;
+; BOARD_MODEL_FAR_PULLDOWN_R                       ; Open                                                ; --            ; --          ; 1.2V                    ;
+; BOARD_MODEL_FAR_PULLUP_R                         ; Open                                                ; --            ; --          ; 1.2V                    ;
+; BOARD_MODEL_FAR_SERIES_R                         ; Short                                               ; --            ; --          ; 1.2V                    ;
+; BOARD_MODEL_NEAR_C                               ; Open                                                ; --            ; --          ; 1.2V                    ;
+; BOARD_MODEL_NEAR_PULLDOWN_R                      ; Open                                                ; --            ; --          ; 1.2V                    ;
+; BOARD_MODEL_NEAR_PULLUP_R                        ; Open                                                ; --            ; --          ; 1.2V                    ;
+; BOARD_MODEL_NEAR_SERIES_R                        ; Short                                               ; --            ; --          ; 1.2V                    ;
+; BOARD_MODEL_NEAR_TLINE_C_PER_LENGTH              ; 0                                                   ; --            ; --          ; 1.2V                    ;
+; BOARD_MODEL_NEAR_TLINE_LENGTH                    ; 0                                                   ; --            ; --          ; 1.2V                    ;
+; BOARD_MODEL_NEAR_TLINE_L_PER_LENGTH              ; 0                                                   ; --            ; --          ; 1.2V                    ;
+; BOARD_MODEL_TERMINATION_V                        ; 0                                                   ; --            ; --          ; 1.2V                    ;
+; BOARD_MODEL_TLINE_C_PER_LENGTH                   ; 0                                                   ; --            ; --          ; 1.2V                    ;
+; BOARD_MODEL_TLINE_LENGTH                         ; 0                                                   ; --            ; --          ; 1.2V                    ;
+; BOARD_MODEL_TLINE_L_PER_LENGTH                   ; 0                                                   ; --            ; --          ; 1.2V                    ;
+; COMPILER_SIGNATURE_ID                            ; 18544355728770.145402387202708                      ; --            ; --          ; --                      ;
+; EDA_GENERATE_POWER_INPUT_FILE                    ; Off                                                 ; --            ; --          ; eda_simulation          ;
+; EDA_MAINTAIN_DESIGN_HIERARCHY                    ; Off                                                 ; --            ; --          ; eda_simulation          ;
+; EDA_OUTPUT_DATA_FORMAT                           ; Vhdl                                                ; --            ; --          ; eda_simulation          ;
+; EDA_OUTPUT_DATA_FORMAT                           ; None                                                ; --            ; --          ; eda_board_design_symbol ;
+; EDA_SIMULATION_TOOL                              ; Active-HDL (VHDL)                                   ; <None>        ; --          ; --                      ;
+; EDA_TIME_SCALE                                   ; 1 ps                                                ; --            ; --          ; eda_simulation          ;
+; INCREMENTAL_COMPILATION_EXPORT_FLATTEN           ; Off                                                 ; --            ; --          ; --                      ;
+; INCREMENTAL_COMPILATION_EXPORT_POST_FIT          ; Off                                                 ; --            ; --          ; --                      ;
+; INCREMENTAL_COMPILATION_EXPORT_POST_SYNTH        ; Off                                                 ; --            ; --          ; --                      ;
+; INCREMENTAL_COMPILATION_EXPORT_ROUTING           ; Off                                                 ; --            ; --          ; --                      ;
+; MAX_CONSECUTIVE_OUTPUTS_FOR_ELECTROMIGRATION     ; 14                                                  ; --            ; --          ; --                      ;
+; MAX_CONSECUTIVE_VIO_OUTPUTS_FOR_ELECTROMIGRATION ; 12                                                  ; --            ; --          ; --                      ;
+; MAX_CURRENT_FOR_ELECTROMIGRATION                 ; 240                                                 ; --            ; --          ; --                      ;
+; MAX_CURRENT_FOR_VIO_ELECTROMIGRATION             ; 240                                                 ; --            ; --          ; --                      ;
+; OPTIMIZE_HOLD_TIMING                             ; IO Paths and Minimum TPD Paths                      ; All Paths     ; --          ; --                      ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS                   ; Half Signal Swing                                   ; --            ; --          ; --                      ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS                   ; Half Signal Swing                                   ; --            ; --          ; --                      ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS                  ; Half Signal Swing                                   ; --            ; --          ; --                      ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS                  ; Half Signal Swing                                   ; --            ; --          ; --                      ;
+; USER_LIBRARIES                                   ; c:/Users/Megatron/Documents/testWorkspaces/lab2/src ; --            ; --          ; --                      ;
++--------------------------------------------------+-----------------------------------------------------+---------------+-------------+-------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:31     ; 1.0                     ; 847 MB              ; 00:01:15                           ;
+; Total                ; 00:00:31     ; --                      ; --                  ; 00:01:15                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Flow OS Summary                                                                   ;
++----------------------+------------------+-----------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++----------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis ; Megatron-PC      ; Windows 8 ; 6.2        ; x86_64         ;
++----------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off lab2 -c lab2
+
+
+
