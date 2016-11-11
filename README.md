@@ -5,17 +5,19 @@ I wanted to to publish this code in case to help other programers.
 
 They include work from introductory Computer Science classes learning C++ to Computer Architecture and VHDL.
 
-Below is the courses included in this repository
+The courses included in this repository are as follows:
 
-ODU
+## ODU
 CS
-	CS 150 Problem Solving and Programming I
-	CS 250 Problem Solving and Programming II
-	CS 361 Advanced Data Structures and Algorithms
 
-ECE 
-	ECE 201 Circuit Analysis I
-	ECE 341 Digital System Design
-	ECE 346 MicroControllers
-	ECE 441 Advanced Digital Design and Field Programmable Gate Arrays
-	ECE 443 Computer Architecture
+- CS 150 Problem Solving and Programming I
+- CS 250 Problem Solving and Programming II
+- CS 361 Advanced Data Structures and Algorithms
+
+ECE
+
+- ECE 201 Circuit Analysis I
+- ECE 341 Digital System Design
+- ECE 346 MicroControllers
+- ECE 441 Advanced Digital Design and Field Programmable Gate Arrays
+- ECE 443 Computer Architecture
