@@ -7,7 +7,6 @@ They include work from introductory Computer Science classes learning C++ to Com
 
 The courses included in this repository are as follows:
 
-## ODU
 CS
 
 - CS 150 Problem Solving and Programming I
