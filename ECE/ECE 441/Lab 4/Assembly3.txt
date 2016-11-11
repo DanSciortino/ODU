@@ -1,0 +1,43 @@
+addi $t0, $t0, 256
+addi $t1, $t1, 257
+addi $t2, $t2, 258
+addi $t3, $t3, 259
+addi $t4, $t4, 260
+addi $t5, $t5, 512
+addi $t6, $t6, 513
+addi $t7, $t7, 514
+addi $t8, $t8, 515
+addi $t9, $t9, 516
+lw $t0, 0($t0)
+lw $t1, 0($t1)
+lw $t2, 0($t2)
+lw $t3, 0($t3)
+lw $t4, 0($t4)
+lw $t5, 0($t5)
+lw $t6, 0($t6)
+lw $t7, 0($t7)
+lw $t8, 0($t8)
+lw $t9, 0($t9)
+mult $t0, $t5
+mflo $t0
+mult $t1, $t6
+mflo $t1
+mult $t2, $t7
+mflo $t2
+mult $t3, $t8
+mflo $t3
+mult $t4, $t9
+mflo $t4
+add $t0, $t0, $t1
+add $t0, $t0, $t2
+add $t0, $t0, $t3
+add $t0, $t0, $t4
+add $t5, $t5, $t6
+add $t5, $t5, $t7
+add $t5, $t5, $t8
+add $t5, $t5, $t9
+div $t0, $t5
+mflo $t0
+andi $t9, $t9, 0
+addi $t9, $t9, 255
+sw $t0, 0($t9)

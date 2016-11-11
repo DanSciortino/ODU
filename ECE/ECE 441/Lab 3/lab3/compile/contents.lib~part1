@@ -1,0 +1,5 @@
+21
+~E 1 "./../src/part1.vhd" 6 part1
+~A 1 "./../src/part1.vhd" 15 behavioral
+~E 1 "./../../pll1.vhd" 43 pll1
+~A 1 "./../../pll1.vhd" 52 SYN

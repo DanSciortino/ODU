@@ -1,0 +1,65 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=halfAdder
+
+[Library]
+halfAdder=.\halfAdder\halfAdder.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+fileopenfolder=C:\Users\dscio001\Downloads\Project 2\Project 2\HalfAdder\src
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+halfAdder=.
+Active_lib=
+
+[Files]
+/or2.vhd=-1
+/xor2.vhd=-1
+/and2.vhd=-1
+/HalfAdder.vhd=-1
+/Half Adder SImulation.asdb=-1
+/Half Adder SImulation.awc=-1
+/HalfAdder_tb.vhd=-1
+/wave.asdb=-1
+
+[Files.Data]
+.\src\or2.vhd=VHDL Source Code
+.\src\xor2.vhd=VHDL Source Code
+.\src\and2.vhd=VHDL Source Code
+.\src\HalfAdder.vhd=VHDL Source Code
+.\src\Half Adder SImulation.asdb=Accelerated Waveform File
+.\src\Half Adder SImulation.awc=Accelerated Waveform Configuration
+.\src\HalfAdder_tb.vhd=VHDL Source Code
+.\src\wave.asdb=Accelerated Waveform File
+
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=or2|behavior|0 
+ShowHide=ShowTopLevel
+Selected=

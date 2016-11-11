@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: H:\Project 2\Workspace_4\subber16b\src\16b sub.vhd" 
+MESSAGE "Compile Entity "nSubber"" 
+MESSAGE "Compile Architecture "structure" of Entity "nSubber"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

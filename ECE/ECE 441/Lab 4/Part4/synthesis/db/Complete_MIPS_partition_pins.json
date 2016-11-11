@@ -1,0 +1,293 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "A_Out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[8]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[9]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[10]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[11]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[12]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[13]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[14]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[15]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[16]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[17]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[18]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[19]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[20]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[21]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[22]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[23]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[24]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[25]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[26]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[27]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[28]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[29]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[30]",
+					"strict" : false
+				},
+				{
+					"name" : "A_Out[31]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[4]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[5]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[6]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[7]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[8]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[9]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[10]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[11]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[12]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[13]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[14]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[15]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[16]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[17]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[18]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[19]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[20]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[21]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[22]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[23]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[24]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[25]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[26]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[27]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[28]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[29]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[30]",
+					"strict" : false
+				},
+				{
+					"name" : "D_Out[31]",
+					"strict" : false
+				},
+				{
+					"name" : "WE_tb",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK_50",
+					"strict" : false
+				},
+				{
+					"name" : "RST",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

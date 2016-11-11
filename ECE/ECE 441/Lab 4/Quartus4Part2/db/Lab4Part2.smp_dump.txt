@@ -1,0 +1,17 @@
+
+State Machine - |Complete_MIPS|MIPS:CPU|OpSave
+Name OpSave.mflo OpSave.mfhi OpSave.multu OpSave.mult OpSave.divu OpSave.div OpSave.jr OpSave.shl OpSave.shr OpSave.slt OpSave.sub OpSave.add OpSave.or1 OpSave.and1 
+OpSave.and1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+OpSave.or1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+OpSave.add 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+OpSave.sub 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+OpSave.slt 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+OpSave.shr 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+OpSave.shl 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+OpSave.jr 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+OpSave.div 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+OpSave.divu 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+OpSave.mult 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+OpSave.multu 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+OpSave.mfhi 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+OpSave.mflo 1 0 0 0 0 0 0 0 0 0 0 0 0 1 

@@ -1,0 +1,13 @@
+24
+~E 1 "./../src/9-9.vhd" 5 Complete_MIPS
+~A 1 "./../src/9-9.vhd" 10 model
+~E 1 "./../src/9-7.vhd" 5 Memory
+~A 1 "./../src/9-7.vhd" 13 Internal
+~E 1 "./../src/9-8.vhd" 5 MIPS
+~A 1 "./../src/9-8.vhd" 14 structure
+~E 1 "./../src/9-10.vhd" 5 MIPS_Testbench
+~A 1 "./../src/9-10.vhd" 8 test
+~E 1 "./../src/PLL.vhd" 43 PLL
+~A 1 "./../src/PLL.vhd" 52 SYN
+~E 1 "./../src/9-6.vhd" 5 REG
+~A 1 "./../src/9-6.vhd" 13 Behavioral

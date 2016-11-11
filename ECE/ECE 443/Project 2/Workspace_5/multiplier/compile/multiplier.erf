@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: H:\Project 2\Workspace_5\multiplier\src\mult.vhd" 
+MESSAGE "Compile Entity "multiplier"" 
+MESSAGE "Compile Architecture "behavior" of Entity "multiplier"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

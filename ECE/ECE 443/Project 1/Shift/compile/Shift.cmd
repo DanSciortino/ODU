@@ -1,0 +1,1 @@
+-w -s "C:\Users\dscio001\Downloads\Project1\Project1\library.cfg"  -j "C:\Users\dscio001\Downloads\Project1\Project1\Shift\projlib.cfg"  -d "C:\Users\dscio001\Downloads\Project1\Project1\Shift\compile"   -work shift  -O3 -e 100 -2002 "C:\Users\dscio001\Downloads\Project1\Project1\Shift\src\shift.vhd"

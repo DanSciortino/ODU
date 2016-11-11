@@ -1,0 +1,5 @@
+.\src\or2.vhd
+.\src\xor2.vhd
+.\src\and2.vhd
+.\src\HalfAdder.vhd
+.\src\HalfAdder_tb.vhd

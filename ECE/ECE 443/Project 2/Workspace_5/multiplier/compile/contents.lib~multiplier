@@ -1,0 +1,7 @@
+20
+~E 1 "./../src/mult_tb.vhd" 10 mult_tb
+~E 1 "./../src/mult.vhd" 10 multiplier
+~A 1 "./../src/mult.vhd" 19 behavior
+~E 1 "./../src/TestBench/multiplier_TB.vhd" 7 multiplier_tb
+~A 1 "./../src/TestBench/multiplier_TB.vhd" 10 TB_ARCHITECTURE
+~C 1 "./../src/TestBench/multiplier_TB.vhd" 50 testbench_for_multiplier

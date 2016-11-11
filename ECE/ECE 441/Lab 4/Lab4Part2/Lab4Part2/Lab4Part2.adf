@@ -1,0 +1,69 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=Lab4Part1
+
+[Library]
+Lab4Part1=.\Lab4Part1\Lab4Part1.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=ONLY_IMPL
+ON_SERVERFARM_SYNTH=0
+ON_SERVERFARM_IMPL=0
+ON_SERVERFARM_SIM=0
+DVM_DISPLAY=NO
+fileopenfolder=C:\My_Designs\Lab4Part2\Lab4Part2\src
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+Lab4Part1=.
+Active_lib=
+
+[IMPLEMENTATION]
+UCF=
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=complete_mips|model|0 
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/9-7.vhd=-1
+/PLL.vhd=-1
+/9-6.vhd=-1
+/9-8.vhd=-1
+/9-9.vhd=-1
+/9-10.vhd=-1
+
+[Files.Data]
+.\src\9-7.vhd=VHDL Source Code
+.\src\PLL.vhd=VHDL Source Code
+.\src\9-6.vhd=VHDL Source Code
+.\src\9-8.vhd=VHDL Source Code
+.\src\9-9.vhd=VHDL Source Code
+.\src\9-10.vhd=VHDL Source Code
+

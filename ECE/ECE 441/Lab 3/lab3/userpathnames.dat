@@ -1,0 +1,7 @@
+[ExLibList-used]
+MV_QUARTUS_SYNTHESIS150=1
+[VerilogDirs-used]
+tools=1
+[tools*VerilogDirs]
+MEGA=user
+src=user

@@ -1,0 +1,1 @@
+-w -s "F:\lab3\lab3\library.cfg"  -j "F:\lab3\lab3\projlib.cfg"  -d "F:\lab3\lab3\compile"   -work part1  -O3 -e 100 -2002 "F:/lab3/lab3/src/part1.vhd"

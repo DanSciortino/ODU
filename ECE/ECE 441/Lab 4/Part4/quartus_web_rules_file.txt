@@ -1,0 +1,106 @@
+7.0, 3,1080,18, https://www.altera.com/support/software/download/altera_design/quartus_we/dnl-quartus_we.jsp?xy=infobutton_wev111
+7.0, 1,1070,17, http://www.altera.com/products/software/products/quartus2/whats_new/qts-whatsnew.jsp?xy=infobutton_wev111_wn
+
+7.1, 3,1060,16, https://www.altera.com/support/software/download/altera_design/quartus_we/dnl-quartus_we.jsp?xy=infobutton_wev111
+7.1, 1,1050,15, http://www.altera.com/products/software/products/quartus2/whats_new/qts-whatsnew.jsp?xy=infobutton_wev111_wn
+
+7.11, 5,100,2, http://www.altera.com/support/kdb/solutions/rd07272007_148.html?xy=infobutton_wev711k
+7.11, 3,1060,16, https://www.altera.com/support/software/download/altera_design/quartus_we/dnl-quartus_we.jsp?xy=infobutton_wev111
+7.11, 1,1050,15, http://www.altera.com/products/software/products/quartus2/whats_new/qts-whatsnew.jsp?xy=infobutton_wev111_wn
+
+7.2, 3,1080,18, https://www.altera.com/support/software/download/altera_design/quartus_we/dnl-quartus_we.jsp?xy=infobutton_wev111
+7.2, 1,1070,17, http://www.altera.com/products/software/products/quartus2/whats_new/qts-whatsnew.jsp?xy=infobutton_wev111_wn
+
+7.21, 3,1080,18, https://www.altera.com/support/software/download/altera_design/quartus_we/dnl-quartus_we.jsp?xy=infobutton_wev111
+7.21, 1,1070,17, http://www.altera.com/products/software/products/quartus2/whats_new/qts-whatsnew.jsp?xy=infobutton_wev111_wn
+
+7.22, 3,860,14, https://www.altera.com/support/software/download/altera_design/quartus_we/dnl-quartus_we.jsp?xy=infobutton_wev111
+7.22, 1,850,13, http://www.altera.com/products/software/products/quartus2/whats_new/qts-whatsnew.jsp?xy=infobutton_wev111_wn
+
+7.23, 3,960,15, https://www.altera.com/support/software/download/altera_design/quartus_we/dnl-quartus_we.jsp?xy=infobutton_wev111
+7.23, 1,950,14, http://www.altera.com/products/software/products/quartus2/whats_new/qts-whatsnew.jsp?xy=infobutton_wev111_wn
+
+8.0, 1,1050,15, http://www.altera.com/products/software/products/quartus2/whats_new/qts-whatsnew.jsp?xy=infobutton_wev111_wn
+8.0, 3,1060,16, https://www.altera.com/support/software/download/altera_design/quartus_we/dnl-quartus_we.jsp?xy=infobutton_wev111
+
+8.01, 1,950,14, http://www.altera.com/products/software/products/quartus2/whats_new/qts-whatsnew.jsp?xy=infobutton_wev111_wn
+8.01, 3,960,15, https://www.altera.com/support/software/download/altera_design/quartus_we/dnl-quartus_we.jsp?xy=infobutton_wev111
+
+8.1, 1,850,13, http://www.altera.com/products/software/products/quartus2/whats_new/qts-whatsnew.jsp?xy=infobutton_wev111_wn
+8.1, 3,860,14, https://www.altera.com/support/software/download/altera_design/quartus_we/dnl-quartus_we.jsp?xy=infobutton_wev111
+
+9.0, 1,650,11, http://www.altera.com/products/software/products/quartus2/whats_new/qts-whatsnew.jsp?xy=infobutton_wev111_wn
+9.0, 3,660,12, https://www.altera.com/support/software/download/altera_design/quartus_we/dnl-quartus_we.jsp?xy=infobutton_wev111
+
+9.01, 3,860,14, https://www.altera.com/support/software/download/altera_design/quartus_we/dnl-quartus_we.jsp?xy=infobutton_wev111
+9.01, 1,850,13, http://www.altera.com/products/software/products/quartus2/whats_new/qts-whatsnew.jsp?xy=infobutton_wev111_wn
+
+9.02, 3,1000,17, https://www.altera.com/support/software/download/altera_design/quartus_we/dnl-quartus_we.jsp?xy=infobutton_wev111
+9.02, 1,990,16, http://www.altera.com/products/software/products/quartus2/whats_new/qts-whatsnew.jsp?xy=infobutton_wev111_wn
+
+9.1, 1,550,10, http://www.altera.com/products/software/products/quartus2/whats_new/qts-whatsnew.jsp?xy=infobutton_wev111_wn
+9.1, 3,560,11, https://www.altera.com/support/software/download/altera_design/quartus_we/dnl-quartus_we.jsp?xy=infobutton_wev111
+
+9.11, 1,670,11, http://www.altera.com/products/software/products/quartus2/whats_new/qts-whatsnew.jsp?xy=infobutton_wev111_wn
+9.11, 3,680,12, https://www.altera.com/support/software/download/altera_design/quartus_we/dnl-quartus_we.jsp?xy=infobutton_wev111
+
+9.12, 1,290,13, http://www.altera.com/products/software/products/quartus2/whats_new/qts-whatsnew.jsp?xy=infobutton_wev111_wn
+9.12, 3,300,14, https://www.altera.com/support/software/download/altera_design/quartus_we/dnl-quartus_we.jsp?xy=infobutton_wev111
+
+10.0, 1,240,7, http://www.altera.com/products/software/products/quartus2/whats_new/qts-whatsnew.jsp?xy=infobutton_wev111_wn
+10.0, 3,250,8, https://www.altera.com/support/software/download/altera_design/quartus_we/dnl-quartus_we.jsp?xy=infobutton_wev111
+
+10.01, 1,150,7, http://www.altera.com/products/software/products/quartus2/whats_new/qts-whatsnew.jsp?xy=infobutton_wev111_wn
+10.01, 3,160,8, https://www.altera.com/support/software/download/altera_design/quartus_we/dnl-quartus_we.jsp?xy=infobutton_wev111&WT.mc_id=qj_pw_al_tf_gh_c_451
+
+10.1, 1,210,5, http://www.altera.com/products/software/products/quartus2/whats_new/qts-whatsnew.jsp?xy=infobutton_wev111_wn
+10.1, 3,220,6, https://www.altera.com/download/software/quartus-ii-we?xy=infobutton_wev111&WT.mc_id=qj_pw_al_tf_gh_c_451
+
+10.11, 1,210,3, http://www.altera.com/products/software/products/quartus2/whats_new/qts-whatsnew.jsp?xy=infobutton_wev111_wn
+10.11, 3,220,4, https://www.altera.com/download/software/quartus-ii-we?xy=infobutton_wev111&WT.mc_id=qj_pw_al_tf_gh_c_451
+
+11.0, 1,110,3, http://www.altera.com/products/software/products/quartus2/whats_new/qts-whatsnew.jsp?xy=infobutton_wev111_wn
+11.0, 3,200,4, https://www.altera.com/download/software/quartus-ii-we?xy=infobutton_wev111&WT.mc_id=qj_pw_al_tf_gh_c_451
+
+11.1, 1,100,1, http://www.altera.com/products/software/products/quartus2/whats_new/qts-whatsnew.jsp?xy=infobutton_wev111_wn
+11.1, 2,110,2, https://www.altera.com/download/software/quartus-ii-we?xy=infobutton_wev111_sp1
+
+11.11, 2,110,2, https://www.altera.com/download/software/quartus-ii-we?xy=infobutton_wev111_sp2
+
+11.12, 3,100,1, https://www.altera.com/products/software/quartus-ii/whats-new/swf-qts-whats-new.html?xy=infobutton_sev111_wn
+11.12, 1,110,2, https://www.altera.com/download/dnl-index.jsp?xy=infobutton_sev111_sp2
+
+12.01, 5,120,1, http://www.altera.com/support/kdb/solutions/rd07272012_92.html?xy=infobutton_sev111_wn
+
+12.0, 4,300,3, http://www.altera.com/products/software/products/quartus2/whats_new/qts-whatsnew.jsp?xy=infobutton_sev110_wn
+12.0, 3,310,4, https://www.altera.com/support/software/download/altera_design/quartus_sub/dnl-quartus_sub.jsp?xy=infobutton_sev110
+
+12.01, 4,320,3, http://www.altera.com/products/software/products/quartus2/whats_new/qts-whatsnew.jsp?xy=infobutton_sev110_wn
+12.01, 3,330,4, https://www.altera.com/support/software/download/altera_design/quartus_sub/dnl-quartus_sub.jsp?xy=infobutton_sev110
+
+12.02, 4,340,3, http://www.altera.com/products/software/products/quartus2/whats_new/qts-whatsnew.jsp?xy=infobutton_sev110_wn
+12.02, 3,350,4, https://www.altera.com/support/software/download/altera_design/quartus_sub/dnl-quartus_sub.jsp?xy=infobutton_sev110
+
+12.10, 4,360,3, http://www.altera.com/products/software/products/quartus2/whats_new/qts-whatsnew.jsp?xy=infobutton_sev110_wn
+12.10, 3,370,4, https://www.altera.com/support/software/download/altera_design/quartus_sub/dnl-quartus_sub.jsp?xy=infobutton_sev110
+
+12.11, 5,430,8, http://www.altera.com/support/kdb/solutions/rd03142013_686.html?xy=infobutton_wev111_kdb
+12.11, 4,420,6, http://www.altera.com/products/software/products/quartus2/whats_new/qts-whatsnew.jsp?xy=infobutton_wev110_wn
+12.11, 3,410,7, https://www.altera.com/support/software/download/altera_design/quartus_sub/dnl-quartus_sub.jsp?xy=infobutton_wev110
+
+13.0, 3, 110, 1, https://www.altera.com/support/software/download/altera_design/quartus_sub/dnl-quartus_sub.jsp?xy=infobutton_wev131
+13.0, 1, 100, 2, http://www.altera.com/products/software/quartus-ii/whats-new/swf-qts-whats-new.html?xy=infobutton_wev131_wn
+
+13.01, 3, 110, 1, https://www.altera.com/support/software/download/altera_design/quartus_sub/dnl-quartus_sub.jsp?xy=infobutton_wev131
+13.01, 1, 100, 2, http://www.altera.com/products/software/quartus-ii/whats-new/swf-qts-whats-new.html?xy=infobutton_wev131_wn
+
+13.1, 1, 100, 1, http://www.altera.com/products/software/quartus-ii/whats-new/swf-qts-whats-new.html?xy=infobutton_wev131_wn
+
+14.1, 4, 120, 1, https://www.altera.com/support/software/quartus-ii/whats-new/swf-qts-whats-new.html?xy=infobutton_sev131
+14.1, 3, 130, 2, https://www.altera.com/support/software/download/altera_design/quartus_sub/dnl-quartus_sub.jsp?xy=infobutton_sev131
+
+15.0, 3, 140, 1, https://www.altera.com/support/software/quartus-ii/whats-new/swf-qts-whats-new.html?xy=infobutton_sev131
+15.0, 3, 150, 2, https://www.altera.com/support/software/download/altera_design/quartus_sub/dnl-quartus_sub.jsp?xy=infobutton_sev131
+
+15.1, 4, 160, 1, https://www.altera.com/support/software/quartus-ii/whats-new/swf-qts-whats-new.html?xy=infobutton_sev131
+15.1, 3, 170, 2, https://www.altera.com/support/software/download/altera_design/quartus_sub/dnl-quartus_sub.jsp?xy=infobutton_sev131

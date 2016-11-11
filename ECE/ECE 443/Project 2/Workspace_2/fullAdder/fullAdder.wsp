@@ -1,0 +1,32 @@
+[CACHESIMPLE|Aldec.SymbolsCommands.7]
+fullAdder=1
+Built-in symbols=0
+[COMPILESTATUS|.\src\and2.vhd]
+FileTimeLow=30554758
+Status=Compiled
+[COMPILESTATUS|.\src\Full adder Verification.asdb]
+FileTimeLow=30554758
+Status=Modified
+[COMPILESTATUS|.\src\Full adder Verification.awc]
+FileTimeLow=30554758
+Status=Modified
+[COMPILESTATUS|.\src\Fulladder.vhd]
+FileTimeLow=30554758
+Status=Compiled
+[COMPILESTATUS|.\src\FullAdder_tb.vhd]
+FileTimeLow=30554758
+Status=Compiled
+[COMPILESTATUS|.\src\HalfAdder.vhd]
+FileTimeLow=30554758
+Status=Compiled
+[COMPILESTATUS|.\src\or2.vhd]
+FileTimeLow=30554758
+Status=Compiled
+[COMPILESTATUS|.\src\wave.asdb]
+FileTimeLow=30554758
+Status=Modified
+[COMPILESTATUS|.\src\xor2.vhd]
+FileTimeLow=30554758
+Status=Compiled
+[Gui config]
+RunFor=100 ns

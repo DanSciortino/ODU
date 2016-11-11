@@ -1,0 +1,11 @@
+[Files List]
+C:\Aldec\Active-HDL-10.2\vlib\std/src/standard.vhd=S
+C:\Aldec\Active-HDL-10.2\vlib\std/src/textio.vhd=S
+C:\Aldec\Active-HDL-10.2\vlib\ieee/src/std_logic_1164.vhdl=S
+C:\Aldec\Active-HDL-10.2\vlib\ieee/src/std_logic_1164-body.vhdl=S
+H:\Project 2\Workspace_2\fullAdder/src/and2.vhd=S
+H:\Project 2\Workspace_2\fullAdder/src/xor2.vhd=S
+H:\Project 2\Workspace_2\fullAdder/src/or2.vhd=S
+H:\Project 2\Workspace_2\fullAdder/src/HalfAdder.vhd=S
+H:\Project 2\Workspace_2\fullAdder/src/Fulladder.vhd=S
+H:\Project 2\Workspace_2\fullAdder/src/FullAdder_tb.vhd=S

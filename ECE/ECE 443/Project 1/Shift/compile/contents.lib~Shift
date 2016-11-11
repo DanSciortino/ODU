@@ -1,0 +1,23 @@
+572
+~E 1 "./../src/and2.vhd" 10 and2
+~A 1 "./../src/and2.vhd" 17 behavior
+~E 1 "./../src/and2.vhd" 10 and_2
+~A 1 "./../src/and2.vhd" 17 behavior
+~E 1 "./../src/dff.vhd" 8 dff
+~A 1 "./../src/dff.vhd" 13 structure
+~A 1 "./../src/dff.vhd" 18 strucure
+~E 1 "./../src/dlatch.vhd" 11 dlatch
+~A 1 "./../src/dlatch.vhd" 18 strucure
+~E 1 "./../src/jkff.vhd" 11 jkff
+~A 1 "./../src/jkff.vhd" 18 strucure
+~E 1 "./../src/not1.vhd" 10 not1
+~A 1 "./../src/not1.vhd" 17 Behavior
+~E 1 "./../src/not1.vhd" 10 not_1
+~A 1 "./../src/not1.vhd" 17 Behavior
+~E 1 "./../src/or2.vhd" 10 or2
+~A 1 "./../src/or2.vhd" 17 behavior
+~E 1 "./../src/or2.vhd" 10 or_2
+~A 1 "./../src/or2.vhd" 17 behavior
+~E 1 "./../src/shift.vhd" 10 shiftRegister
+~A 1 "./../src/shift.vhd" 17 strucure
+~E 1 "./../src/jkff_tb.vhd" 8 testbench

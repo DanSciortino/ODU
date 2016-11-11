@@ -1,0 +1,12 @@
+[Version]
+Version=10.2
+[Designs]
+subber16b=.\subber16b\subber16b.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+subber16b=1

@@ -1,0 +1,28 @@
+[CACHESIMPLE|Aldec.SymbolsCommands.7]
+Lab4Part4=1
+Built-in symbols=0
+[CACHEDOC|Aldec.Project.Generic.7|.\Lab4Part4.adf|]
+Path=/complete_mips_tb
+[COMPILESTATUS|.\src\9-6.vhd]
+FileTimeLow=30509350
+Status=Compiled
+[COMPILESTATUS|.\src\9-7.vhd]
+FileTimeLow=30513543
+Status=Compiled
+[COMPILESTATUS|.\src\9-8.vhd]
+FileTimeLow=30514973
+Status=Compiled
+[COMPILESTATUS|.\src\9-9.vhd]
+FileTimeLow=30514967
+Status=Compiled
+[COMPILESTATUS|.\src\pll.vhd]
+FileTimeLow=30512948
+Status=Compiled
+[COMPILESTATUS|.\src\TestBench\complete_mips_TB.vhd]
+FileTimeLow=30514971
+Status=Compiled
+[COMPILESTATUS|.\src\TestBench\complete_mips_TB_runtest.do]
+FileTimeLow=30512947
+Status=Modified
+[Gui config]
+RunFor=1000 us

@@ -1,0 +1,1 @@
+-w -s "H:\Project 2\Workspace_5\library.cfg"  -j "H:\Project 2\Workspace_5\multiplier\projlib.cfg"  -d "H:\Project 2\Workspace_5\multiplier\compile"   -work multiplier  -O3 -e 100 -2002 "H:/Project 2/Workspace_5/multiplier/src/mult.vhd"

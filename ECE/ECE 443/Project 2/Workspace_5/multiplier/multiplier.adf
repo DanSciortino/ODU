@@ -1,0 +1,57 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=multiplier
+
+[Library]
+multiplier=.\multiplier\multiplier.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+multiplier=.
+Active_lib=
+
+[Groups]
+TestBench=1
+
+[Files]
+/mult.vhd=-1
+TestBench/multiplier_TB.vhd=-1
+TestBench/multiplier_TB_runtest.do=-1
+
+[Files.Data]
+.\src\mult.vhd=VHDL Source Code
+.\src\TestBench\multiplier_TB.vhd=VHDL Test Bench
+.\src\TestBench\multiplier_TB_runtest.do=Macro
+
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=multiplier|behavior|0  
+ShowHide=ShowTopLevel
+Selected=

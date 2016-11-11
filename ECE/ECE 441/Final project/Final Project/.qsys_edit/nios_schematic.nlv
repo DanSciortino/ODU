@@ -1,0 +1,20 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst nios.switches -pg 1 -lvl 3 -y 230
+preplace inst nios.jtag -pg 1 -lvl 3 -y 30
+preplace inst nios -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst nios.Onchip_Memory -pg 1 -lvl 3 -y 330
+preplace inst nios.nios2 -pg 1 -lvl 1 -y 200
+preplace inst nios.nios2.reset_bridge -pg 1
+preplace inst nios.LEDs -pg 1 -lvl 3 -y 130
+preplace inst nios.nios2.cpu -pg 1
+preplace inst nios.nios2.clock_bridge -pg 1
+preplace inst nios.clk -pg 1 -lvl 2 -y 50
+preplace netloc EXPORT<net_container>nios</net_container>(SLAVE)nios.clk,(SLAVE)clk.clk_in) 1 0 2 NJ 60 NJ
+preplace netloc FAN_OUT<net_container>nios</net_container>(SLAVE)Onchip_Memory.clk1,(SLAVE)jtag.clk,(SLAVE)switches.clk,(SLAVE)nios2.clk,(SLAVE)LEDs.clk,(MASTER)clk.clk) 1 0 3 80 120 NJ 120 740
+preplace netloc INTERCONNECT<net_container>nios</net_container>(SLAVE)LEDs.s1,(SLAVE)Onchip_Memory.s1,(MASTER)nios2.data_master,(SLAVE)jtag.avalon_jtag_slave,(SLAVE)switches.s1,(MASTER)nios2.instruction_master,(SLAVE)nios2.debug_mem_slave) 1 0 3 100 160 460 160 720
+preplace netloc POINT_TO_POINT<net_container>nios</net_container>(SLAVE)LEDs.external_connection,(SLAVE)switches.external_connection) 1 2 1 760
+preplace netloc INTERCONNECT<net_container>nios</net_container>(SLAVE)LEDs.reset,(MASTER)nios2.debug_reset_request,(SLAVE)clk.clk_in_reset,(MASTER)clk.clk_reset,(SLAVE)jtag.reset,(SLAVE)Onchip_Memory.reset1,(SLAVE)nios2.reset,(SLAVE)switches.reset) 1 0 3 60 140 480 180 680
+preplace netloc POINT_TO_POINT<net_container>nios</net_container>(SLAVE)jtag.irq,(MASTER)nios2.irq) 1 1 2 NJ 290 700
+levelinfo -pg 1 0 30 960
+levelinfo -hier nios 40 220 510 800 950

@@ -1,0 +1,12 @@
+2
+~E 1 "./../src/9-9.vhd" 5 Complete_MIPS
+~A 1 "./../src/9-9.vhd" 11 model
+~E 1 "./../src/TestBench/complete_mips_TB.vhd" 5 complete_mips_tb
+~A 1 "./../src/TestBench/complete_mips_TB.vhd" 8 TB_ARCHITECTURE
+~E 1 "./../src/9-7.vhd" 5 Memory
+~A 1 "./../src/9-7.vhd" 12 Internal
+~E 1 "./../src/9-8.vhd" 5 MIPS
+~A 1 "./../src/9-8.vhd" 13 structure
+~E 1 "./../src/9-6.vhd" 5 REG
+~A 1 "./../src/9-6.vhd" 13 Behavioral
+~C 1 "./../src/TestBench/complete_mips_TB.vhd" 47 testbench_for_complete_mips

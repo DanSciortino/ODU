@@ -1,0 +1,11 @@
+1
+~E 1 "./../src/and2.vhd" 9 and2
+~A 1 "./../src/and2.vhd" 16 behavior
+~E 1 "./../src/HalfAdder.vhd" 9 halfAdder
+~A 1 "./../src/HalfAdder.vhd" 16 structure
+~E 1 "./../src/HalfAdder_tb.vhd" 8 halfadder_tb
+~A 1 "./../src/HalfAdder_tb.vhd" 12 behavior
+~E 1 "./../src/or2.vhd" 9 or2
+~A 1 "./../src/or2.vhd" 16 behavior
+~E 1 "./../src/xor2.vhd" 9 xor2
+~A 1 "./../src/xor2.vhd" 16 behavior

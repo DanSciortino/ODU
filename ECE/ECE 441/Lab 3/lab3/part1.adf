@@ -1,0 +1,110 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=part1
+
+[Library]
+part1=.\part1\part1.lib
+part1_timing=.\part1_timing\part1_timing.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FAMILY=Quartus CycloneIVE
+SYNTH_TOOL=MV_QUARTUS_SYNTHESIS150
+RUN_MODE_SYNTH=0
+CSYNTH_TOOL=
+PHYSSYNTH_TOOL=
+IMPL_TOOL=
+FLOWTOOLS=IMPL_WITH_SYNTH
+ON_SERVERFARM_SYNTH=0
+ON_SERVERFARM_IMPL=0
+ON_SERVERFARM_SIM=0
+DVM_DISPLAY=NO
+SYNTH_STATUS=warnings
+IMPL_STATUS=warnings
+VerilogDirsChanged=0
+FUNC_LIB=part1
+TIM_LIB=part1_timing
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+part1=.
+Active_lib=
+
+[IMPLEMENTATION]
+UCF=
+DEVICE_TECHNOLOGY_MIGRATION_LIST=
+LAST_RUN=1455040388
+
+[Groups]
+MEGA=1
+timing=1
+
+[Files]
+/part1.vhd=-1
+MEGA/..\..\..\pll1.vhd=-1
+timing/..\..\synthesis\simulation\activehdl\part1.vho=-1
+timing/..\..\synthesis\simulation\activehdl\part1_vhd.sdo=-1
+
+[Files.Data]
+.\src\part1.vhd=VHDL Source Code
+.\..\pll1.vhd=VHDL SOURCE CODE
+.\synthesis\simulation\activehdl\part1.vho=VHDL SOURCE CODE
+.\synthesis\simulation\activehdl\part1_vhd.sdo=SDF FILE
+
+[SYNTHESIS]
+FAMILY=Quartus CycloneIVE
+DEVICE=EP4CE115F29C
+SPEED=7
+TOPLEVEL=part1
+JOB_DESCRIPTION=SynthesisTask
+JOB_SFM_RESOURCE=
+ENABLE_SIGNALTAP=0
+SERVERFARM_INCLUDE_INPUT_FILES=*.*
+SERVERFARM_EXCLUDE_INPUT_FILES=
+OVERWRITE_PROJECT=1
+AUTO_CLOSE=0
+QSF_FILE_SELECTION=
+CHECK_PROJECT_OUTPUT_DIRECTORY=0
+CHECK_OPTIMIZE_HOLD_TIMING=1
+USE_SIGNALTAP_FILE=
+ENABLE_LOGIC_ANALYZER_INTERFACE=0
+USE_LOGIC_ANALYZER_INTERFACE_FILE=
+OLD_FAMILY=Quartus CycloneIVE
+CHECK_IMPORT_PIN_ASSIGNMENTS=1
+IMPORT_PIN_ASSIGNMENTS=.\..\DE2_115.qsf
+CHECK_GENERATE_FPGA_EXCHANGE_FILE=0
+GENERATE_FPGA_EXCHANGE_FILE=.\symbols\fpgaxchange
+BTM_IO_STANDARD=1.2V
+DEFAULT_QUARTUS_SETTINGS_FILE=C:\altera\15\quartus\bin64\assignment_defaults.qdf
+OUTPUT_IO_TIMING_NEAR_END_VMEAS_RISE=Half Signal Swing
+OUTPUT_IO_TIMING_NEAR_END_VMEAS_FALL=Half Signal Swing
+OUTPUT_IO_TIMING_FAR_END_VMEAS_RISE=Half Signal Swing
+OUTPUT_IO_TIMING_FAR_END_VMEAS_FALL=Half Signal Swing
+
+LAST_RUN=1455040387
+[sdf.ea.part1-behavioral]
+0=synthesis\simulation\activehdl\part1_vhd.sdo| /part1, Average, No
+[SIM.TIME]
+TOPLEVEL=part1
+SDF_PATH=F:/lab3/lab3/synthesis/simulation/activehdl/part1_vhd.sdo

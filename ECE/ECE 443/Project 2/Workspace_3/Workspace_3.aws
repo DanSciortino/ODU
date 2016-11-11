@@ -1,0 +1,12 @@
+[Version]
+Version=10.2
+[Designs]
+adder16b=.\Adder16b\Adder16b.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+adder16b=1

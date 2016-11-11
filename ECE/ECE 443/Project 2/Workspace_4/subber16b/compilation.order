@@ -1,0 +1,8 @@
+.\src\or2.vhd
+.\src\xor2.vhd
+.\src\not1.vhd
+.\src\and2.vhd
+.\src\HalfAdder.vhd
+.\src\Fulladder.vhd
+.\src\16b Adder.vhd
+.\src\16b sub.vhd

@@ -1,0 +1,67 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=subber16b
+
+[Library]
+subber16b=.\subber16b\subber16b.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+fileopenfolder=C:\Users\dscio001\Downloads\Project 2\Project 2\Workspace_4
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+subber16b=.
+Active_lib=
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=nadder|structure|0  
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/or2.vhd=-1
+/xor2.vhd=-1
+/not1.vhd=-1
+/and2.vhd=-1
+/HalfAdder.vhd=-1
+/Fulladder.vhd=-1
+/16b Adder.vhd=-1
+/16b sub.vhd=-1
+
+[Files.Data]
+.\src\or2.vhd=VHDL Source Code
+.\src\xor2.vhd=VHDL Source Code
+.\src\not1.vhd=VHDL Source Code
+.\src\and2.vhd=VHDL Source Code
+.\src\HalfAdder.vhd=VHDL Source Code
+.\src\Fulladder.vhd=VHDL Source Code
+.\src\16b Adder.vhd=VHDL Source Code
+.\src\16b sub.vhd=VHDL Source Code
+

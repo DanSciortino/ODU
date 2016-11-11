@@ -1,0 +1,1 @@
+-w -s "H:\Project 2\Workspace_4\library.cfg"  -j "H:\Project 2\Workspace_4\subber16b\projlib.cfg"  -d "H:\Project 2\Workspace_4\subber16b\compile"   -work subber16b  -O3 -e 100 -2002 "H:/Project 2/Workspace_4/subber16b/src/16b sub.vhd"

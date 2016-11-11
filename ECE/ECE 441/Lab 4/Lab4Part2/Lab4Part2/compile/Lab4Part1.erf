@@ -1,0 +1,40 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: C:\My_Designs\Lab4Part2\Lab4Part2\src\9-6.vhd" 
+MESSAGE "Compile Entity "REG"" 
+MESSAGE "Compile Architecture "Behavioral" of Entity "REG"" 
+MESSAGE "File: C:\My_Designs\Lab4Part2\Lab4Part2\src\9-7.vhd" 
+MESSAGE "Compile Entity "Memory"" 
+MESSAGE "Compile Architecture "Internal" of Entity "Memory"" 
+MESSAGE "File: C:\My_Designs\Lab4Part2\Lab4Part2\src\9-8.vhd" 
+MESSAGE "Compile Entity "MIPS"" 
+MESSAGE "Compile Architecture "structure" of Entity "MIPS"" 
+MESSAGE "File: C:\My_Designs\Lab4Part2\Lab4Part2\src\9-9.vhd" 
+MESSAGE "Compile Entity "Complete_MIPS"" 
+MESSAGE "Compile Architecture "model" of Entity "Complete_MIPS"" 
+MESSAGE "File: C:\My_Designs\Lab4Part2\Lab4Part2\src\9-10.vhd" 
+MESSAGE "Compile Entity "MIPS_Testbench"" 
+MESSAGE "Compile Architecture "test" of Entity "MIPS_Testbench"" 
+MESSAGE "File: C:\My_Designs\Lab4Part2\Lab4Part2\src\PLL.vhd" 
+BEGINPROGRESS C:\My_Designs\Lab4Part2\Lab4Part2\src\PLL.vhd
+UPDATEPROGRESS 1
+MESSAGE "Compile Entity "PLL"" 
+UPDATEPROGRESS 3
+UPDATEPROGRESS 4
+MESSAGE "Compile Architecture "SYN" of Entity "pll"" 
+UPDATEPROGRESS 5
+UPDATEPROGRESS 6
+UPDATEPROGRESS 8
+UPDATEPROGRESS 28
+UPDATEPROGRESS 29
+UPDATEPROGRESS 30
+UPDATEPROGRESS 51
+UPDATEPROGRESS 100
+ENDPROGRESS C:\My_Designs\Lab4Part2\Lab4Part2\src\PLL.vhd
+MESSAGE "Incorrect order of units detected." 
+MESSAGE "Automatic reorder and incremental recompilation of required units in progress." 
+MESSAGE "Top-level unit(s) detected:" 
+MESSAGE "Entity => Complete_MIPS" 
+MESSAGE "Entity => MIPS_Testbench" 
+MESSAGE "File: C:\My_Designs\Lab4Part2\Lab4Part2\src\9-9.vhd" 
+MESSAGE "Compile Architecture "model" of Entity "Complete_MIPS"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]" 

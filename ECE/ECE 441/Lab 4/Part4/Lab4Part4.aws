@@ -1,0 +1,14 @@
+[Version]
+Version=10.2
+[Designs]
+Lab4Part4=Lab4Part4.adf
+[Settings]
+Active=Lab4Part4
+[Expand]
+lab4part4=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=

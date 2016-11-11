@@ -1,0 +1,3 @@
+.\src\part1.vhd
+.\..\pll1.vhd
+.\synthesis\simulation\activehdl\part1.vho

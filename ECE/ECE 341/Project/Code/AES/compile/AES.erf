@@ -1,0 +1,16 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: C:\Users\awrig045\Downloads\ECE_341_AES_PROJECT\AES\src\Key_Expander.vhd" 
+BEGINPROGRESS C:\Users\awrig045\Downloads\ECE_341_AES_PROJECT\AES\src\Key_Expander.vhd
+MESSAGE "Compile Entity "key_expander"" 
+UPDATEPROGRESS 1
+MESSAGE "Compile Architecture "some_name" of Entity "key_expander"" 
+UPDATEPROGRESS 2
+UPDATEPROGRESS 13
+UPDATEPROGRESS 14
+UPDATEPROGRESS 15
+UPDATEPROGRESS 16
+UPDATEPROGRESS 82
+UPDATEPROGRESS 99
+UPDATEPROGRESS 100
+ENDPROGRESS C:\Users\awrig045\Downloads\ECE_341_AES_PROJECT\AES\src\Key_Expander.vhd
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]" 

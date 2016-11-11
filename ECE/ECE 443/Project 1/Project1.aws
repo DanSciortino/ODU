@@ -1,0 +1,12 @@
+[Version]
+Version=10.2
+[Designs]
+shift=.\Shift\Shift.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+shift=1
