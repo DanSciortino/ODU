@@ -1,0 +1,6 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: e:\School\ECE 443 Computer Architecture\16-Bit_Processor\Processor\Processor\src\TestBench\processor_TB.vhd" 
+MESSAGE "Compile Entity "processor_tb"" 
+MESSAGE "Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"" 
+MESSAGE "Compile Configuration "TESTBENCH_FOR_processor"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  32.0 [ms]" 

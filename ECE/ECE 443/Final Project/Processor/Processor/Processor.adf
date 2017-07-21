@@ -1,0 +1,144 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=Processor
+
+[Library]
+Processor=.\Processor\Processor.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=ONLY_IMPL
+ON_SERVERFARM_SYNTH=0
+ON_SERVERFARM_IMPL=0
+ON_SERVERFARM_SIM=0
+DVM_DISPLAY=NO
+fileopenfolder=E:\School\ECE 443 Computer Architecture\16-Bit_Processor\Processor\Processor\src
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+Processor=.
+Active_lib=
+
+[IMPLEMENTATION]
+UCF=
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=alu_tb|behavioral|0 processor_tb|TB_ARCHITECTURE|0 reg_tb|behavioral|0 
+ShowHide=ShowTopLevel
+Selected=
+
+[Groups]
+TestBench=1
+
+[Files]
+/HalfAdder.vhd=-1
+/FullAdder.vhd=-1
+/Adder_16.vhd=-1
+/Subtractor_16.vhd=-1
+/Multiplier_16.vhd=-1
+/Multiplexer_8to1.vhd=-1
+/Multiplexer_8to1_by16.vhd=-1
+/ALU_16.vhd=-1
+/Multiplexer_2to1.vhd=-1
+/Multiplexer_2to1_by16.vhd=-1
+/RegisterFile.vhd=-1
+/InstructionMemory.vhd=-1
+/DataMemory.vhd=-1
+/ControlUnit.vhd=-1
+/SignExtend.vhd=-1
+/PC_increment.vhd=-1
+/ProgramCounter.vhd=-1
+/Processor.vhd=-1
+/ram_tb_Simulation.asdb=-1
+/ram_tb_Simulation.awc=-1
+/InstructionMemory_tb_Simulation.asdb=-1
+/InstructionMemory_tb_Simulation.awc=-1
+/ControlUnit_tb_Simulation.asdb=-1
+/ControlUnit_tb_Simulation.awc=-1
+/Processor_tb_Simulation.asdb=-1
+/Processor_tb_Simulation.awc=-1
+/ALU_tb_Simulation.asdb=-1
+/ALU_tb_Simulation.awc=-1
+/Regs_tb_Simulation.asdb=-1
+/Regs_tb_Simulation.awc=-1
+TestBench/ram_TB.vhd=-1
+TestBench/ram_TB_runtest.do=-1
+TestBench/instructionmemory_TB.vhd=-1
+TestBench/instructionmemory_TB_runtest.do=-1
+TestBench/controlunit_TB.vhd=-1
+TestBench/controlunit_TB_runtest.do=-1
+TestBench/processor_TB.vhd=-1
+TestBench/processor_TB_runtest.do=-1
+TestBench/alu_16_TB.vhd=-1
+TestBench/alu_16_TB_runtest.do=-1
+TestBench/reg_TB.vhd=-1
+TestBench/reg_TB_runtest.do=-1
+
+[Files.Data]
+.\src\HalfAdder.vhd=VHDL Source Code
+.\src\FullAdder.vhd=VHDL Source Code
+.\src\Adder_16.vhd=VHDL Source Code
+.\src\Subtractor_16.vhd=VHDL Source Code
+.\src\Multiplier_16.vhd=VHDL Source Code
+.\src\Multiplexer_8to1.vhd=VHDL Source Code
+.\src\Multiplexer_8to1_by16.vhd=VHDL Source Code
+.\src\ALU_16.vhd=VHDL Source Code
+.\src\Multiplexer_2to1.vhd=VHDL Source Code
+.\src\Multiplexer_2to1_by16.vhd=VHDL Source Code
+.\src\RegisterFile.vhd=VHDL Source Code
+.\src\InstructionMemory.vhd=VHDL Source Code
+.\src\DataMemory.vhd=VHDL Source Code
+.\src\ControlUnit.vhd=VHDL Source Code
+.\src\SignExtend.vhd=VHDL Source Code
+.\src\PC_increment.vhd=VHDL Source Code
+.\src\ProgramCounter.vhd=VHDL Source Code
+.\src\Processor.vhd=VHDL Source Code
+.\src\ram_tb_Simulation.asdb=Accelerated Waveform File
+.\src\ram_tb_Simulation.awc=Accelerated Waveform Configuration
+.\src\InstructionMemory_tb_Simulation.asdb=Accelerated Waveform File
+.\src\InstructionMemory_tb_Simulation.awc=Accelerated Waveform Configuration
+.\src\ControlUnit_tb_Simulation.asdb=Accelerated Waveform File
+.\src\ControlUnit_tb_Simulation.awc=Accelerated Waveform Configuration
+.\src\Processor_tb_Simulation.asdb=Accelerated Waveform File
+.\src\Processor_tb_Simulation.awc=Accelerated Waveform Configuration
+.\src\ALU_tb_Simulation.asdb=Accelerated Waveform File
+.\src\ALU_tb_Simulation.awc=Accelerated Waveform Configuration
+.\src\Regs_tb_Simulation.asdb=Accelerated Waveform File
+.\src\Regs_tb_Simulation.awc=Accelerated Waveform Configuration
+.\src\TestBench\ram_TB.vhd=VHDL Test Bench
+.\src\TestBench\ram_TB_runtest.do=Macro
+.\src\TestBench\instructionmemory_TB.vhd=VHDL Test Bench
+.\src\TestBench\instructionmemory_TB_runtest.do=Macro
+.\src\TestBench\controlunit_TB.vhd=VHDL Test Bench
+.\src\TestBench\controlunit_TB_runtest.do=Macro
+.\src\TestBench\processor_TB.vhd=VHDL Test Bench
+.\src\TestBench\processor_TB_runtest.do=Macro
+.\src\TestBench\alu_16_TB.vhd=VHDL Test Bench
+.\src\TestBench\alu_16_TB_runtest.do=Macro
+.\src\TestBench\reg_TB.vhd=VHDL Test Bench
+.\src\TestBench\reg_TB_runtest.do=Macro
+
