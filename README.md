@@ -1,7 +1,7 @@
 # ODU
-These file is part of ODU.
-This is my course work, I choose to use github to host the code, that I: Wrote or co-wrote from the help of a Teaching assistant(TA).
-I wanted to to publish this code in case to help other programers.
+This file is part of ODU.
+This is my coursework, I choose to use GitHub to host the code, that I: Wrote or co-wrote with the help of a Teaching Assistant(TA).
+I wanted to publish this code in case to help other programmers.
 
 They include work from introductory Computer Science classes learning C++ to Computer Architecture and VHDL.
 
@@ -20,3 +20,4 @@ ECE
 - ECE 346 MicroControllers
 - ECE 441 Advanced Digital Design and Field Programmable Gate Arrays
 - ECE 443 Computer Architecture
+- ECE 486/487 Senior Design
